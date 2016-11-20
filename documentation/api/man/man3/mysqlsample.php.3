@@ -1,0 +1,42 @@
+.TH "testscripts/mysqlsample.php" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testscripts/mysqlsample.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$start\fP = microtime ( 1 )"
+.br
+.ti -1c
+.RI "\fB$DaoFactory\fP = \fBDaoFactory::GetDaoFactory\fP ('mysqli')"
+.br
+.ti -1c
+.RI "\fB$SampleDao\fP = $\fBDaoFactory\fP\->GetSampleDao ()"
+.br
+.ti -1c
+.RI "\fB$stop\fP = microtime ( 1 )"
+.br
+.ti -1c
+.RI "\fB$time\fP = $stop \- $start"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBDaoFactory\fP = \fBDaoFactory::GetDaoFactory\fP ('mysqli')"
+
+.SS "$\fBSampleDao\fP = $\fBDaoFactory\fP\->GetSampleDao ()"
+
+.SS "$start = microtime ( 1 )"
+
+.SS "$stop = microtime ( 1 )"
+
+.SS "$time = $stop \- $start"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

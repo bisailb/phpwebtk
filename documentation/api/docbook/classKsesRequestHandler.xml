@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classKsesRequestHandler">
+<title>KsesRequestHandler class Reference</title>
+<para>Inheritance diagram for KsesRequestHandler</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classKsesRequestHandler__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for KsesRequestHandler</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classKsesRequestHandler__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $KsesRequestHandler</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Kses</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1a3c46c6e172c953b01f16d86d94f7a1a6">BasicTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1aded7eb2dacb9a14549e409b3de14ebe8">CharacterFormatTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1abe6719976608187d9271f8a63f6452bb">OutputTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1aca8b0aa346c71cd3d38c492981851b5d">BlockTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1ab228c47a8cbc25680c1d40cc76c029c0">LinkTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1a51102316d97e85e2562489969498ffb9">FrameTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1a578636424a235de0facf62999f320d72">InputTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1a0e82145aa2ff7366617058763bfa4932">ListTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1aaa4eff3387d864b771802db42207003b">ImageTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1a7fd86023f0fb98f8984f9cc4ddaee8b0">TableTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1aa9afb7b1a1bbaa4327de55bbc292058f">StyleTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1a3f1d670fd49296270cf0595fbc296886">MetaInformationTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1a81baac50810a3309055da3f0bf462cf5">ProgrammingTags</link> (
+Kses5 $Kses5)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classKsesRequestHandler_1a1c0690847d48a13c86533b493dc6a7da">HandleRequest</link> (
+<link linkend="classRequest">Request</link> $Request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classKsesRequestHandler_1a3c46c6e172c953b01f16d86d94f7a1a6">
+                <title>KsesRequestHandler::BasicTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function BasicTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s basic tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1aded7eb2dacb9a14549e409b3de14ebe8">
+                <title>KsesRequestHandler::CharacterFormatTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function CharacterFormatTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s character format tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1abe6719976608187d9271f8a63f6452bb">
+                <title>KsesRequestHandler::OutputTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function OutputTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s output tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1aca8b0aa346c71cd3d38c492981851b5d">
+                <title>KsesRequestHandler::BlockTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function BlockTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s block tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1ab228c47a8cbc25680c1d40cc76c029c0">
+                <title>KsesRequestHandler::LinkTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function LinkTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s link tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1a51102316d97e85e2562489969498ffb9">
+                <title>KsesRequestHandler::FrameTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function FrameTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s frame tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1a578636424a235de0facf62999f320d72">
+                <title>KsesRequestHandler::InputTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function InputTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s input tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1a0e82145aa2ff7366617058763bfa4932">
+                <title>KsesRequestHandler::ListTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function ListTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s list tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1aaa4eff3387d864b771802db42207003b">
+                <title>KsesRequestHandler::ImageTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function ImageTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s image tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1a7fd86023f0fb98f8984f9cc4ddaee8b0">
+                <title>KsesRequestHandler::TableTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function TableTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s table tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1aa9afb7b1a1bbaa4327de55bbc292058f">
+                <title>KsesRequestHandler::StyleTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function StyleTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s style tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1a3f1d670fd49296270cf0595fbc296886">
+                <title>KsesRequestHandler::MetaInformationTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function MetaInformationTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s meta information tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1a81baac50810a3309055da3f0bf462cf5">
+                <title>KsesRequestHandler::ProgrammingTags (Kses5 $Kses5)</title> <emphasis></emphasis>
+                
+<para>function ProgrammingTags</para>
+
+<para>This method allows and/or disallows XHTML&apos;s programming tags.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classKsesRequestHandler_1a1c0690847d48a13c86533b493dc6a7da">
+                <title>KsesRequestHandler::HandleRequest (Request $Request)</title> <emphasis></emphasis>
+                
+<para>function HandleRequest</para>
+
+<para>This method processes the request if certain conditions are met.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry><link linkend="classRequest">Request</link></entry>
+                                <entry>
+<para><link linkend="classRequest">Request</link> object </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

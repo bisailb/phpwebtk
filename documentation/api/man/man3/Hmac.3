@@ -1,0 +1,89 @@
+.TH "Hmac" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Hmac \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP ()"
+.br
+.ti -1c
+.RI "\fBSetHmacKey\fP ($plaintext)"
+.br
+.ti -1c
+.RI "\fBGetHmac\fP ($plaintext)"
+.br
+.ti -1c
+.RI "\fBIsValidHmac\fP ($ciphertext, $plaintext)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Hmac::__construct ()"
+function __construct
+.PP
+This method is executed when an object is instantiated from this class\&. Preprocessing can be done here before the object is put into service\&.
+.PP
+public 
+.SH "Member Function Documentation"
+.PP 
+.SS "Hmac::GetHmac ( $plaintext)"
+function GetHmac
+.PP
+The GetHmac method gets random bits from the Pseudo-Random Number Generator (PRNG), invokes the Salted S2k algorithm to further randomize the salt, hashes the plaintext including the salt and appends the salt to the end of the resultant ciphertext\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplaintext\fP Plaintext password 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+string Base64 encoded ciphertext 
+.RE
+.PP
+
+.SS "Hmac::IsValidHmac ( $ciphertext,  $plaintext)"
+function IsValidHmac
+.PP
+The isValidHmac method validates a salted or unsalted message authentication code (HMAC)\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIciphertext\fP Ciphertext 
+.br
+\fIplaintext\fP Plaintext 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+boolean TRUE|FALSE 
+.RE
+.PP
+
+.SS "Hmac::SetHmacKey ( $plaintext)"
+function SetHmacKey
+.PP
+The SetHmacKey method gets random bits from the Pseudo-Random Number Generator (PRNG), invokes the Salted S2K algorithm to further randomize the salt, hashes the plaintext including the salt to create an HMAC key and stores it in the XML configuration file\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplaintext\fP Plaintext password 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

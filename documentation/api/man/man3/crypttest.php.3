@@ -1,0 +1,52 @@
+.TH "testscripts/crypttest.php" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testscripts/crypttest.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$start\fP = microtime ( 1 )"
+.br
+.ti -1c
+.RI "\fB$plaintext\fP = 'what do ya want for nothing?'"
+.br
+.ti -1c
+.RI "\fB$Crypt\fP = new \fBCrypt\fP ()"
+.br
+.ti -1c
+.RI "\fB$ciphertext\fP = $\fBCrypt\fP\->Encrypt ( $plaintext )"
+.br
+.ti -1c
+.RI "\fB$output\fP = $\fBCrypt\fP\->Decrypt ( $ciphertext )"
+.br
+.ti -1c
+.RI "\fB$stop\fP = microtime ( 1 )"
+.br
+.ti -1c
+.RI "\fB$time\fP = $stop \- $start"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$ciphertext = $\fBCrypt\fP\->Encrypt ( $plaintext )"
+
+.SS "$\fBCrypt\fP = new \fBCrypt\fP ()"
+
+.SS "$output = $\fBCrypt\fP\->Decrypt ( $ciphertext )"
+
+.SS "$plaintext = 'what do ya want for nothing?'"
+
+.SS "$start = microtime ( 1 )"
+
+.SS "$stop = microtime ( 1 )"
+
+.SS "$time = $stop \- $start"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

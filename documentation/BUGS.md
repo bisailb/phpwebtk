@@ -1,0 +1,1 @@
+* phpwebtk-1.0.4 and higher will no longer be tested using PHP 5.6.x

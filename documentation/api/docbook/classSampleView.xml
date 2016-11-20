@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classSampleView">
+<title>SampleView class Reference</title>
+<para>Inheritance diagram for SampleView</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classSampleView__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for SampleView</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classSampleView__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Request</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Smarty</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$SecurityPolicy</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1abfd32e528bc175a1605f2cf4fc983cf8">__construct</link> (
+<link linkend="classRequest">Request</link> $Request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1adbbec435da78c546b8255889f1e436aa">SetSmartyCaching</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1a80572033c88ad494bd4ed27a93a28215">SetSmartyCompiler</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1a495de2d8da0bd98d3cbbb6a31f3f4d32">SetSmartyConfiguration</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1a6a1aec80447369b8b4b82481805ac397">SetSmartyDebugging</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1a59c75bac5d2c7e03751c259229f36c00">SetSmartyFilters</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1a243901b9ee489a6c827796e6c89fed15">SetSmartySecurity</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1a1e10ca5e5fd25adf3df81ff69fac740c">SetSmartyMiscellaneous</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1ad920887f5b4ba55143f4465a1151f204">SetViewTemplate</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleView_1acfb062d1cb30a40e58c64e2a8f05371b">Display</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classSampleView_1abfd32e528bc175a1605f2cf4fc983cf8">
+                <title>SampleView::__construct (Request $Request)</title> <emphasis></emphasis>
+                
+<para>function __construct</para>
+
+<para>This method is executed when an object is instantiated from this class. Preprocessing can be done here before the object is put into service.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSampleView_1adbbec435da78c546b8255889f1e436aa">
+                <title>SampleView::SetSmartyCaching ()</title> <emphasis></emphasis>
+                
+<para>function SetSmartyCaching</para>
+
+<para>This method is sets Smarty&apos;s caching options.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSampleView_1a80572033c88ad494bd4ed27a93a28215">
+                <title>SampleView::SetSmartyCompiler ()</title> <emphasis></emphasis>
+                
+<para>function SetSmartyCompiler</para>
+
+<para>This method sets Smarty&apos;s compiler options.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSampleView_1a495de2d8da0bd98d3cbbb6a31f3f4d32">
+                <title>SampleView::SetSmartyConfiguration ()</title> <emphasis></emphasis>
+                
+<para>function SetSmartyConfiguration</para>
+
+<para>This method sets Smarty&apos;s configuration options.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSampleView_1a6a1aec80447369b8b4b82481805ac397">
+                <title>SampleView::SetSmartyDebugging ()</title> <emphasis></emphasis>
+                
+<para>function SetSmartyDebugging</para>
+
+<para>This method sets Smarty&apos;s debugging options.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSampleView_1a59c75bac5d2c7e03751c259229f36c00">
+                <title>SampleView::SetSmartyFilters ()</title> <emphasis></emphasis>
+                
+<para>function SetSmartyDebugging</para>
+
+<para>This method sets Smarty&apos;s filtering options.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSampleView_1a243901b9ee489a6c827796e6c89fed15">
+                <title>SampleView::SetSmartySecurity ()</title> <emphasis></emphasis>
+                
+<para>function SetSmartySecurity</para>
+
+<para>This method sets Smarty&apos;s security options.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSampleView_1a1e10ca5e5fd25adf3df81ff69fac740c">
+                <title>SampleView::SetSmartyMiscellaneous ()</title> <emphasis></emphasis>
+                
+<para>function SetSmartyMiscellaneous</para>
+
+<para>This method sets Smarty&apos;s other miscellaneous options.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSampleView_1ad920887f5b4ba55143f4465a1151f204">
+                <title>SampleView::SetViewTemplate ()</title> <emphasis></emphasis>
+                
+<para>function SetViewTemplate</para>
+
+<para>This method sets the appropriate template to display to the user.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSampleView_1acfb062d1cb30a40e58c64e2a8f05371b">
+                <title>SampleView::Display ()</title> <emphasis></emphasis>
+                
+<para>function Display</para>
+
+<para>This method displays the complete view to the user.</para>
+
+<para>public </para>
+
+            </section>
+</section>

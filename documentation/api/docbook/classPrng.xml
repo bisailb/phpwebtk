@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classPrng">
+<title>Prng class Reference</title>
+<para>Inheritance diagram for Prng</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classPrng__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Prng</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classPrng__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $Prng</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classPrng_1a0e0c9d5e7412236bfc627fa51ca285f4">GetPseudoRandomValue</link> (
+ $source,  $length)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classPrng_1a0e0c9d5e7412236bfc627fa51ca285f4">
+                <title>Prng::GetPseudoRandomValue ($source, $length=8)</title> <emphasis></emphasis>
+                
+<para>function <link linkend="classPrng_1a0e0c9d5e7412236bfc627fa51ca285f4">GetPseudoRandomValue()</link></para>
+
+<para>This method retrieves random bits of entropy using a Pseudo-Random Number Generator (PRNG) device or function. The format of the random bits is determined by first converting them to hexadecimal format and then converting them to decimal format byte by byte for /dev/random and /dev/urandom. Furthermore, since values are converted from binary to decimal one at a time, the RAND_MAX (2147483647) constraint does not limit our ability to generate very long random numbers.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>source</entry>
+                                <entry>
+<para>Random source of entropy </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>length</entry>
+                                <entry>
+<para>Length of entropy in bytes </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>mixed Random number|FALSE </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

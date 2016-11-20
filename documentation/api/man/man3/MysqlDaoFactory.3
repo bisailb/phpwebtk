@@ -1,0 +1,88 @@
+.TH "MysqlDaoFactory" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MysqlDaoFactory \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBDaoFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP ()"
+.br
+.ti -1c
+.RI "\fBGetSampleDao\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGetInstance\fP ()"
+.br
+.ti -1c
+.RI "static \fBCreateConnection\fP ($dsn)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MysqlDaoFactory::__construct ()"
+function __construct
+.PP
+This method is executed when an object is instantiated from this class\&. Preprocessing can be done here before the object is put into service\&.
+.PP
+public 
+.SH "Member Function Documentation"
+.PP 
+.SS "static MysqlDaoFactory::CreateConnection ( $dsn)\fC [static]\fP"
+function CreateConnection
+.PP
+This method creates a database connection object using the provided Data Source Name (DSN)\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdsn\fP Data Source Name (DSN) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Database object instance 
+.RE
+.PP
+
+.SS "static MysqlDaoFactory::GetInstance ()\fC [static]\fP"
+function GetInstance
+.PP
+This method instantiates a new object from this class; more specifically, it's a singleton instance\&.
+.PP
+public
+.PP
+\fBReturns:\fP
+.RS 4
+\fBMysqlDaoFactory\fP object instance 
+.RE
+.PP
+
+.SS "MysqlDaoFactory::GetSampleDao ()"
+function GetSampleDao
+.PP
+This method creates a new object of class \fBMysqlSampleDao\fP\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBMysqlSampleDao\fP object instance 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

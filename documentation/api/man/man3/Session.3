@@ -1,0 +1,143 @@
+.TH "Session" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Session \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP ()"
+.br
+.ti -1c
+.RI "\fBGetCacheExpire\fP ()"
+.br
+.ti -1c
+.RI "\fBGetCacheLimiter\fP ()"
+.br
+.ti -1c
+.RI "\fBGetCookieParameters\fP ()"
+.br
+.ti -1c
+.RI "\fBGetId\fP ()"
+.br
+.ti -1c
+.RI "\fBGetName\fP ()"
+.br
+.ti -1c
+.RI "\fBGetSavePath\fP ()"
+.br
+.ti -1c
+.RI "\fBOpenSession\fP ()"
+.br
+.ti -1c
+.RI "\fBCloseSession\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Session::__construct ()"
+function __construct
+.PP
+This method is executed when an object is instantiated from this class\&. Preprocessing can be done here before the object is put into service\&.
+.PP
+private 
+.SH "Member Function Documentation"
+.PP 
+.SS "Session::CloseSession ()"
+function \fBCloseSession()\fP {
+.PP
+This method starts a session if it does not exist, destroys all data registered to the session, and expires the session cookie\&.
+.PP
+public 
+.SS "Session::GetCacheExpire ()"
+function GetCacheExpire
+.PP
+This method retrieves the current cache expire setting\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+integer Current cache expire 
+.RE
+.PP
+
+.SS "Session::GetCacheLimiter ()"
+function GetCacheLimiter
+.PP
+This method retrieves the current cache limiter setting\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+string Current cache limiter 
+.RE
+.PP
+
+.SS "Session::GetCookieParameters ()"
+function GetCookieParameters
+.PP
+This method retrieves the session cookie parameters\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+array \fBSession\fP cookie parameters 
+.RE
+.PP
+
+.SS "Session::GetId ()"
+function getId
+.PP
+This method retrieves the current session id\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+string Current session id 
+.RE
+.PP
+
+.SS "Session::GetName ()"
+function GetName
+.PP
+This method retrieves the current session name\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+string Current session name 
+.RE
+.PP
+
+.SS "Session::GetSavePath ()"
+function GetSavePath
+.PP
+This method retrieves the current session save path\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+string Current session save path 
+.RE
+.PP
+
+.SS "Session::OpenSession ()"
+function OpenSession
+.PP
+This method sets the current session save path, the session name, the session cookie parameters, the current cache limiter, the current cache expire and starts a session\&.
+.PP
+public 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classStreamIo">
+<title>StreamIo class Reference</title>
+<para>Inheritance diagram for StreamIo</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classStreamIo__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for StreamIo</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classStreamIo__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$fileOrUrl</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$handle</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classStreamIo_1a9076ea741e32092efb792253250ee970">__construct</link> (
+ $fileOrUrl)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classStreamIo_1afb43fd6e4a146792566e9aaecd6d9853">Open</link> (
+ $mode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classStreamIo_1afb19b8e8e1be6564167979ca5231c651">Read</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classStreamIo_1aad48b9d76eeec9b8bbe1052d89ce3164">ReadLength</link> (
+ $length)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classStreamIo_1a866d39713a1798daae96c201753bed91">ReadStream</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classStreamIo_1ac5805a372bc3c05329062116be2932ff">ReadStreamLength</link> (
+ $length)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classStreamIo_1a5ade1b126c29e57ba0d7f67936ae1e5b">Write</link> (
+ $data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classStreamIo_1ac1d5b5e79ab77c369a5423aedd727f33">WriteLength</link> (
+ $data,  $length)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classStreamIo_1af20d803c035b82541647aa9113687532">Close</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classStreamIo_1a9076ea741e32092efb792253250ee970">
+                <title>StreamIo::__construct ($fileOrUrl)</title> <emphasis></emphasis>
+                
+<para>function __construct</para>
+
+<para>This method is executed when an object is instantiated from this class. Preprocessing can be done here before the object is put into service.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classStreamIo_1afb43fd6e4a146792566e9aaecd6d9853">
+                <title>StreamIo::Open ($mode)</title> <emphasis></emphasis>
+                
+<para>function Open</para>
+
+<para>This method opens a file or stream.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mode</entry>
+                                <entry>
+<para>Type of access </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>resource File pointer </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classStreamIo_1afb19b8e8e1be6564167979ca5231c651">
+                <title>StreamIo::Read ()</title> <emphasis></emphasis>
+                
+<para>function Read</para>
+
+<para>This method reads all bytes from the file pointer (binary-safe).</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>string File contents </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classStreamIo_1aad48b9d76eeec9b8bbe1052d89ce3164">
+                <title>StreamIo::ReadLength ($length)</title> <emphasis></emphasis>
+                
+<para>function ReadLength</para>
+
+<para>This method reads a specific number of bytes from the file pointer (binary-safe).</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>length</entry>
+                                <entry>
+<para>Length in bytes </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>string File contents </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classStreamIo_1a866d39713a1798daae96c201753bed91">
+                <title>StreamIo::ReadStream ()</title> <emphasis></emphasis>
+                
+<para>function ReadStream</para>
+
+<para>This method reads all bytes from the stream pointer (binary-safe).</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>string Stream contents </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classStreamIo_1ac5805a372bc3c05329062116be2932ff">
+                <title>StreamIo::ReadStreamLength ($length)</title> <emphasis></emphasis>
+                
+<para>function ReadStreamLength</para>
+
+<para>This method reads a specific number of bytes from the stream pointer (binary-safe).</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>length</entry>
+                                <entry>
+<para>Length in bytes </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>string Stream contents </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classStreamIo_1a5ade1b126c29e57ba0d7f67936ae1e5b">
+                <title>StreamIo::Write ($data)</title> <emphasis></emphasis>
+                
+<para>function Write</para>
+
+<para>This method writes all data to the file pointer (binary-safe).</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>data</entry>
+                                <entry>
+<para>Data to write </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classStreamIo_1ac1d5b5e79ab77c369a5423aedd727f33">
+                <title>StreamIo::WriteLength ($data, $length)</title> <emphasis></emphasis>
+                
+<para>function WriteLength</para>
+
+<para>This method writes a specific number of bytes to the file pointer (binary-safe).</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>data</entry>
+                                <entry>
+<para>Data to write </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>length</entry>
+                                <entry>
+<para>Length in bytes </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classStreamIo_1af20d803c035b82541647aa9113687532">
+                <title>StreamIo::Close ()</title> <emphasis></emphasis>
+                
+<para>function Close</para>
+
+<para>This method closes a file or a stream.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>resource File pointer </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

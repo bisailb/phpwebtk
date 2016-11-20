@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classRequest">
+<title>Request class Reference</title>
+<para>Inheritance diagram for Request</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classRequest__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Request</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classRequest__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequest_1aebe431a0db314ebc0f098dd757967d59">SetProperty</link> (
+ $propertyName,  $requestPart)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classRequest_1aebe431a0db314ebc0f098dd757967d59">
+                <title>Request::SetProperty ($propertyName, $requestPart)</title> <emphasis></emphasis>
+                
+<para>function SetProperty</para>
+
+<para>This method sets dynamic properties of this class.</para>
+
+<para>public </para>
+
+            </section>
+</section>

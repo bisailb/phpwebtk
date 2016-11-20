@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classInvoker">
+<title>Invoker class Reference</title>
+<para>Inheritance diagram for Invoker</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classInvoker__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Invoker</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classInvoker__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $Invoker</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Command</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classInvoker_1acf804bdf30516dd89f564dbb770f9052">SetCommand</link> (
+<link linkend="classCommand">Command</link> $Command)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classInvoker_1ad9a8700f4edc70a0f5c94875d3988a21">ExecuteCommand</link> (
+<link linkend="classRequest">Request</link> $Request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classInvoker_1acf804bdf30516dd89f564dbb770f9052">
+                <title>Invoker::SetCommand (Command $Command)</title> <emphasis></emphasis>
+                
+<para>function SetCommand</para>
+
+<para>This method sets the command.</para>
+
+<para>private </para>
+
+            </section>
+            <section xml:id="classInvoker_1ad9a8700f4edc70a0f5c94875d3988a21">
+                <title>Invoker::ExecuteCommand (Request $Request)</title> <emphasis></emphasis>
+                
+<para>function SetCommand</para>
+
+<para>This method executes the command and returns the result to the receiver.</para>
+
+<para>private </para>
+
+            </section>
+</section>

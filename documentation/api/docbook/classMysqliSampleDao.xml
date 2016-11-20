@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classMysqliSampleDao">
+<title>MysqliSampleDao class Reference</title>
+<para>Inheritance diagram for MysqliSampleDao</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classMysqliSampleDao__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for MysqliSampleDao</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classMysqliSampleDao__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$dsn</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqliSampleDao_1a255c7271d76cf4198231733a9277c452">__construct</link> (
+ $dsn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqliSampleDao_1a592943f077d1a3d5f5da8a2423fbfa39">InsertSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqliSampleDao_1afcadf9cf2d3b61bd5b263eecbafa255a">DeleteSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqliSampleDao_1a8661c91708a9d5aad43c0a9a5ad58982">FindSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqliSampleDao_1aa560d84ece8b3056c78b01ff9dad0b30">UpdateSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqliSampleDao_1adf0cdc457eedbe905d47f3f6d0126641">SelectSampleRS</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqliSampleDao_1a3b1f140c75354e6fd9d89e83566cece2">SelectSampleTO</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqliSampleDao_1ac73ba6b57a693fdbc67c7bf0ae6cb005">GetData</link> (
+ $RecordSet)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqliSampleDao_1ac0730a0aecc2958b2e0b766e02ec0dfd">GetDataTO</link> (
+ $RecordSet)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classMysqliSampleDao_1a255c7271d76cf4198231733a9277c452">
+                <title>MysqliSampleDao::__construct ($dsn)</title> <emphasis></emphasis>
+                
+<para>function __construct</para>
+
+<para>This method is executed when an object is instantiated from this class. Preprocessing can be done here before the object is put into service.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqliSampleDao_1a592943f077d1a3d5f5da8a2423fbfa39">
+                <title>MysqliSampleDao::InsertSample ()</title> <emphasis></emphasis>
+                
+<para>function InsertSample</para>
+
+<para>This method retrieves a database connection object, starts a transaction, executes SQL insert statements and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqliSampleDao_1afcadf9cf2d3b61bd5b263eecbafa255a">
+                <title>MysqliSampleDao::DeleteSample ()</title> <emphasis></emphasis>
+                
+<para>function DeleteSample</para>
+
+<para>This method retrieves a database connection object, starts a transaction, executes SQL delete statements and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqliSampleDao_1a8661c91708a9d5aad43c0a9a5ad58982">
+                <title>MysqliSampleDao::FindSample ()</title> <emphasis></emphasis>
+                
+<para>function FindSample</para>
+
+<para>This method retrieves a database connection object, executes SQL select statements, parses recordsets and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqliSampleDao_1aa560d84ece8b3056c78b01ff9dad0b30">
+                <title>MysqliSampleDao::UpdateSample ()</title> <emphasis></emphasis>
+                
+<para>function UpdateSample</para>
+
+<para>This method retrieves a database connection object, starts a transaction, executes SQL update statements and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqliSampleDao_1adf0cdc457eedbe905d47f3f6d0126641">
+                <title>MysqliSampleDao::SelectSampleRS ()</title> <emphasis></emphasis>
+                
+<para>function SelectSampleRS</para>
+
+<para>This method retrieves a database connection object, executes SQL select statements, parses recordsets and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqliSampleDao_1a3b1f140c75354e6fd9d89e83566cece2">
+                <title>MysqliSampleDao::SelectSampleTO ()</title> <emphasis></emphasis>
+                
+<para>function SelectSampleTO</para>
+
+<para>This method retrieves a database connection object, executes SQL select statements, parses recordsets and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqliSampleDao_1ac73ba6b57a693fdbc67c7bf0ae6cb005">
+                <title>MysqliSampleDao::GetData ($RecordSet)</title> <emphasis></emphasis>
+                
+<para>function GetData</para>
+
+<para>This method uses PEAR style data retrieval to retrieve arrays containing the current row. FetchRow() internally moves to the next record after returning the current row.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqliSampleDao_1ac0730a0aecc2958b2e0b766e02ec0dfd">
+                <title>MysqliSampleDao::GetDataTO ($RecordSet)</title> <emphasis></emphasis>
+                
+<para>function GetDataTO</para>
+
+<para>This method uses PEAR style data retrieval to retrieve the current row as an object. FetchNextObject() internally moves to the next row automatically.</para>
+
+<para>public </para>
+
+            </section>
+</section>

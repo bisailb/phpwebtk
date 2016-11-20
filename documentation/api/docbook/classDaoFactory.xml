@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classDaoFactory">
+<title>DaoFactory class Reference</title>
+<para>Inheritance diagram for DaoFactory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classDaoFactory__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for DaoFactory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classDaoFactory__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classDaoFactory_1aaa95869f405150dec61abd80287bfaec">GetDaoFactory</link> (
+ $driver)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classDaoFactory_1aaa95869f405150dec61abd80287bfaec">
+                <title>static DaoFactory::GetDaoFactory ($driver)</title> <emphasis></emphasis>
+                
+<para>function GetDaoFactory</para>
+
+<para>This method builds a Data Source Name (DSN) and invokes the appropriate DAO Factory with the DSN as a parameter.</para>
+
+<para>public</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>mixed object instance|FALSE </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

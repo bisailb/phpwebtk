@@ -1,0 +1,153 @@
+/*********************************************
+ * TITLE: Gazetteer Print Preview Stylesheet * 
+ * URI  : gazetteer/print-preview.css        *
+ * MODIF: 2003-Nov-08 13:56 +0800            *
+ * MEDIA: screen                             *
+ *********************************************/
+
+/* DESCRIPTION:
+ * This is the print preview stylesheet for Gazetteer. It gets displayed on screen (unlike
+ * the print media stylesheet). It shows how the page will look when it is printed on paper.
+ *
+ * NB: this is a visual stylesheet only; it is not used to layout the page when printed.
+ */
+
+
+/* ##### Common Styles ##### */
+
+body {
+  color: black;
+  background-color: white;
+  font-family: "times new roman", times, roman, serif;
+  font-size: 12pt;
+  margin: 0;
+  padding: 1em;
+}
+
+acronym, .titleTip {
+  font-style: italic;
+  border-bottom: none;
+}
+
+acronym:after, .titleTip:after {  /* Prints titles after the acronyms/titletips. Doesn't work in MSIE */
+  content: "(" attr(title) ")";
+  font-size: 90%;
+  font-style: normal;
+  padding-left: 1ex;
+}
+
+.smallCaps {
+  font-variant: small-caps;
+}
+
+.doNotPrint {
+  display: none !important;
+}
+
+
+/* ##### Header ##### */
+
+#header {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.superHeader {
+  display: none;
+}
+
+.headerTitle {
+  color: black;
+  background-color: transparent;
+  font-family: garamond, "times new roman", times, roman, serif;
+  font-weight: normal;
+  font-size: 200%;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subHeader .dateline {
+  display: block !important;
+  position: absolute;
+  right: 1.25em;
+  top: 1.75em;  
+}
+
+.subHeader .navigation {
+  display: none;
+}
+
+
+/* ##### Main Copy ##### */
+
+#main-copy {
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+
+#main-copy h1 {
+  font-family: "trebuchet ms", verdana, helvetica, arial, sans-serif;
+  font-size: 120%;
+  margin: 2ex 0 1ex 0;
+  padding: 0;
+}
+
+#main-copy a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#main-copy a:after {  /* Prints the links' URIs after the links' texts. Doesn't work in MSIE */
+  content: "<" attr(href) ">";
+  font-size: 90%;
+  padding-left: 1ex;
+}
+
+p {
+  margin: 0 0 2ex 0;
+  padding: 0;
+}
+
+q {
+  display: none;
+}
+
+.byline {
+  font-style: italic;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+.byline a:after, .byline acronym:after, .byline .titleTip:after {
+  display: none;
+}
+
+
+/* ##### Footer ##### */
+
+#footer {
+  margin: 2em 0 0 0;
+  padding: 1ex 0 0 0;
+  border-top: 1px solid black;
+}
+
+#footer a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#footer .left {
+  float: left;
+  width: 49%;
+}
+
+#footer .right {
+  text-align: right;
+  float: right;
+  width: 49%;
+}

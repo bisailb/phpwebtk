@@ -1,0 +1,41 @@
+.TH "Prng" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Prng \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGetPseudoRandomValue\fP ($source, $length=8)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "Prng::GetPseudoRandomValue ( $source,  $length = \fC8\fP)"
+function \fBGetPseudoRandomValue()\fP
+.PP
+This method retrieves random bits of entropy using a Pseudo-Random Number Generator (PRNG) device or function\&. The format of the random bits is determined by first converting them to hexadecimal format and then converting them to decimal format byte by byte for /dev/random and /dev/urandom\&. Furthermore, since values are converted from binary to decimal one at a time, the RAND_MAX (2147483647) constraint does not limit our ability to generate very long random numbers\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsource\fP Random source of entropy 
+.br
+\fIlength\fP Length of entropy in bytes 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+mixed Random number|FALSE 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

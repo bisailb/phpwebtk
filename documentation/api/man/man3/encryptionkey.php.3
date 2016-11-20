@@ -1,0 +1,47 @@
+.TH "testscripts/encryptionkey.php" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+testscripts/encryptionkey.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$start\fP = microtime ( 1 )"
+.br
+.ti -1c
+.RI "\fB$Crypt\fP = new \fBCrypt\fP ()"
+.br
+.ti -1c
+.RI "\fB$Hmac\fP = new \fBHmac\fP ()"
+.br
+.ti -1c
+.RI "\fB$encryptionkey\fP = $\fBCrypt\fP\->SetEncryptionKey ( $\fBHmac\fP\->GetHmac ( 'bar' ) )"
+.br
+.ti -1c
+.RI "\fB$stop\fP = microtime ( 1 )"
+.br
+.ti -1c
+.RI "\fB$time\fP = $stop \- $start"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBCrypt\fP = new \fBCrypt\fP ()"
+
+.SS "$encryptionkey = $\fBCrypt\fP\->SetEncryptionKey ( $\fBHmac\fP\->GetHmac ( 'bar' ) )"
+
+.SS "$\fBHmac\fP = new \fBHmac\fP ()"
+
+.SS "$start = microtime ( 1 )"
+
+.SS "$stop = microtime ( 1 )"
+
+.SS "$time = $stop \- $start"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

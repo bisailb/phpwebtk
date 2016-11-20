@@ -1,0 +1,247 @@
+/***************************************
+ * TITLE: Gazetteer Compact Stylesheet *
+ * URI  : gazetteer/compact.css        *
+ * MODIF: 2003-Nov-08 14:40 +0800      *
+ * MEDIA: screen, handheld             *
+ ***************************************/
+
+/* DESCRIPTION:
+ * This is the compact stylesheet for Gazetteer. It maximses the main copy area and collapses
+ * the header. The header is reduced to one line with the navigation tabs, seen in the default
+ * stylesheet, converted into button-like blocks that change pattern when the User moves the
+ * mouse pointer over them.
+ *
+ * This stylesheet is best used for display on small display areas (eg: handheld devices).
+ */
+
+
+/* ##### Common Styles ##### */
+
+body {
+  color: gray;
+  background-color: white;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 71%;  /* Enables font size scaling in MSIE */
+  margin: 0;
+  padding: 0;
+}
+
+html > body {
+  font-size: 8.5pt;
+}
+
+acronym, .titleTip {
+  border-bottom: 1px dotted gray;
+  cursor: help;
+  margin: 0;
+  padding: 0 0 0.4px 0;
+}
+
+acronym:hover, .titleTip:hover {  /* Ignored by MSIE. The nerve! */
+  border-bottom: 1px solid rgb(70,130,180);  /* 'steelblue' not recognised here by Opera */
+}
+
+.doNotDisplay {
+  display: none;
+}
+
+.smallCaps {
+  font-size: 110%;
+  font-variant: small-caps;
+}
+
+
+/* ###### Header ###### */
+
+#header {
+  margin: 0 1em 1.5em 1em;
+  padding: 0 0 0.25em 0;
+  border-bottom: 3px solid rgb(70,130,180);  /* 'steelblue' not recognised here by Opera */
+}
+
+.headerTitle {
+  color: rgb(175,175,175);
+  background-color: transparent;
+  font-family: garamond, "times new roman", times, roman, serif;
+  font-size: 200%;
+  margin: 0 0.5em 0 0;
+  padding: 1ex 0 0 0;
+  float: left;
+}
+
+.subHeader {
+  margin: 0;
+  padding: 0.75em 1ex 0.5ex 1ex;
+}
+
+.subHeader .dateline {
+  color: gray;
+  background-color: transparent;
+  font-style: italic;
+  margin: 0.75em 0 0 1ex;
+  padding: 0;
+  float: right;
+}
+
+.subHeader .navigation {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+
+.subHeader .navigation li {
+  line-height: 1.75em;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.subHeader a {
+  margin: 0;
+  padding: 0.1ex 2ex 0.25ex 2ex;
+  color: rgb(175,175,175);
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid rgb(175,175,175);
+}
+
+.subHeader a:hover {
+  color: white;
+  background-color: steelblue;
+  text-decoration: none;
+  border-color: steelblue;
+}
+
+.subHeader .navigation .highlighted {
+  color: white;
+  background-color: steelblue;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.1ex 2ex 0.25ex 2ex;
+  border: 1px solid rgb(70,130,180);  /* 'steelblue' not recognised here by Opera */
+}
+
+
+/* ##### Main Copy ##### */
+
+#main-copy {
+  text-align: justify;
+  line-height: 1.5em;
+  margin: 0 1em 0 1em;
+  padding: 0;
+}
+
+#main-copy p {
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+
+#main-copy q {
+  color: rgb(225,225,225);
+  background-color: transparent;
+  font-size: 200%;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-align: center;
+  text-indent: -1ex;
+  margin: 0.3em 0 0.8em 0;
+  padding: 0;
+  display: block;
+}
+
+q:before, q:after {  /* Prevents Gecko from adding quotation marks around quote */
+  content: "";
+}
+
+#main-copy a {
+  color: gray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#main-copy a:hover {
+  color: steelblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#main-copy h1 {
+  font-family: "trebuchet ms", verdana, helvetica, arial, sans-serif;
+  font-size: 145.5%;
+  font-weight: bold;
+  margin: 0 0 1.05em 0;
+  padding: 0;
+}
+
+.byline {
+  font-size: 91%;
+  border-bottom: 1px solid gray;
+  margin: -1.2em 0 1em 0;
+  padding: 0;
+  width: 100%;  /* Circumvents a rendering bug (?) in MSIE 6.0 */
+}
+
+[class~="byline"] {
+  margin-top: -1.4em;
+}
+
+#main-copy .byline a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#main-copy .byline a:hover {
+  color: steelblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.raisedCap:first-letter {
+  font-size: 155%;
+  font-weight: bold;
+}
+
+.noIndent {
+  text-indent: 0 !important;
+}
+
+
+/* ###### Footer ###### */
+
+#footer {
+  color: rgb(175,175,175);
+  background-color: rgb(250,250,250);
+  margin: 0;
+  padding: 0.25em 5mm 1.25ex 4mm;
+  clear: both;
+}
+
+body > #footer {  /* Circumvents a rendering bug (?) in MSIE 6.0 */
+  padding-top: 0.5em;
+}
+
+#footer .left {
+  line-height: 1.45em;
+  float: left;
+  clear: left;
+}
+
+#footer .right {
+  text-align: right;
+  line-height: 1.45em;
+}
+
+#footer a {
+  color: rgb(175,175,175);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#footer a:hover {
+  color: steelblue;
+  background-color: transparent;
+  text-decoration: none;
+}

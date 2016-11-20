@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classConfigDao">
+<title>ConfigDao class Reference</title>
+<para>Inheritance diagram for ConfigDao</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classConfigDao__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ConfigDao</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classConfigDao__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classConfigDao_1a23856eba1a896cb1b691bd70d173321f">GetElementsByPath</link> (
+ $expression)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classConfigDao_1ac609ae1d964831657028fe1e6798663c">SetElementByPath</link> (
+ $expression,  $data,  $fileName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classConfigDao_1a23856eba1a896cb1b691bd70d173321f">
+                <title>ConfigDao::GetElementsByPath ($expression)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classConfigDao_1ac609ae1d964831657028fe1e6798663c">
+                <title>ConfigDao::SetElementByPath ($expression, $data, $fileName)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

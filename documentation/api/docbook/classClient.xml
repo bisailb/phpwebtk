@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classClient">
+<title>Client class Reference</title>
+<para>Inheritance diagram for Client</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classClient__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Client</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classClient__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $Client</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Request</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classClient_1a5ab0229aa7371b78206827d3c9942448">BuildRequest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classClient_1ad9c6b20edcb2276ba986c850f9b0b1e3">SendRequest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classClient_1a5ab0229aa7371b78206827d3c9942448">
+                <title>Client::BuildRequest ()</title> <emphasis></emphasis>
+                
+<para>function BuildRequest</para>
+
+<para>This method constructs, retrieves and shares the <link linkend="classRequest">Request</link> object to this class locally so that it can be sent to the front controller via the SendRequest method for processing.</para>
+
+<para>private </para>
+
+            </section>
+            <section xml:id="classClient_1ad9c6b20edcb2276ba986c850f9b0b1e3">
+                <title>Client::SendRequest ()</title> <emphasis></emphasis>
+                
+<para>function SendRequest</para>
+
+<para>This method builds and sends the <link linkend="classRequest">Request</link> object to the front controller via the ProcessRequest method for processing. The front controller then gives a response back to the end user.</para>
+
+<para>public </para>
+
+            </section>
+</section>

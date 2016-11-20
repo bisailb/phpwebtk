@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classSlashesRequestHandler">
+<title>SlashesRequestHandler class Reference</title>
+<para>Inheritance diagram for SlashesRequestHandler</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classSlashesRequestHandler__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for SlashesRequestHandler</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classSlashesRequestHandler__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSlashesRequestHandler_1ad922865252f9c243e852437311f24f94">AddSlashesDeep</link> (
+ $request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSlashesRequestHandler_1a429febd70910de0cf7d2eb6197cb24e5">StripSlashesDeep</link> (
+ $request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSlashesRequestHandler_1a275627002a210a679d22e7d3606dc6ff">HandleRequest</link> (
+<link linkend="classRequest">Request</link> $Request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classSlashesRequestHandler_1ad922865252f9c243e852437311f24f94">
+                <title>SlashesRequestHandler::AddSlashesDeep ($request)</title> <emphasis></emphasis>
+                
+<para>function AddSlashesDeep</para>
+
+<para>This method enables magic quotes at runtime. Magic-quotes was added to reduce code written by beginners from being dangerous.</para>
+
+<para>private 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>request</entry>
+                                <entry>
+<para>HTTP GET or HTTP POST request </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>request Modified HTTP GET or HTTP POST request </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classSlashesRequestHandler_1a429febd70910de0cf7d2eb6197cb24e5">
+                <title>SlashesRequestHandler::StripSlashesDeep ($request)</title> <emphasis></emphasis>
+                
+<para>function StripSlashesDeep</para>
+
+<para>This method disables magic quotes at runtime. If you disable magic quotes, you must be very careful to protect yourself from SQL injection attacks.</para>
+
+<para>private 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>request</entry>
+                                <entry>
+<para>HTTP GET or HTTP POST request </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>request Modified HTTP GET or HTTP POST request </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classSlashesRequestHandler_1a275627002a210a679d22e7d3606dc6ff">
+                <title>SlashesRequestHandler::HandleRequest (Request $Request)</title> <emphasis></emphasis>
+                
+<para>function HandleRequest</para>
+
+<para>This method processes the request if certain conditions are met.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry><link linkend="classRequest">Request</link></entry>
+                                <entry>
+<para><link linkend="classRequest">Request</link> object </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

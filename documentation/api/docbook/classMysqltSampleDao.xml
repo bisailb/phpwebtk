@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classMysqltSampleDao">
+<title>MysqltSampleDao class Reference</title>
+<para>Inheritance diagram for MysqltSampleDao</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classMysqltSampleDao__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for MysqltSampleDao</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classMysqltSampleDao__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $MysqltSampleDao</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$dsn</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqltSampleDao_1a06fb285670ef42929f17a66fd34d8b99">__construct</link> (
+ $dsn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqltSampleDao_1a272709956ecda875a1f2edc225f73be4">InsertSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqltSampleDao_1a775c55d24e887e3c8d051bb04d525894">DeleteSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqltSampleDao_1a7c9cced93ba38e4da9c0d9635fa62b1f">FindSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqltSampleDao_1a042cca96a84f36547b56d9840f297c46">UpdateSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqltSampleDao_1abcce171c994d978503f4a82eae2d7ef1">SelectSampleRS</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqltSampleDao_1aff10b963a823a9edf753e2d56e0fd652">SelectSampleTO</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqltSampleDao_1abfcfff7f7a608809e84e4961f40d530c">GetData</link> (
+ $RecordSet)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMysqltSampleDao_1aaa9c0d18e0c9b262e7c018b5fab80685">GetDataTO</link> (
+ $RecordSet)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classMysqltSampleDao_1a06fb285670ef42929f17a66fd34d8b99">
+                <title>MysqltSampleDao::__construct ($dsn)</title> <emphasis></emphasis>
+                
+<para>function __construct</para>
+
+<para>This method is executed when an object is instantiated from this class. Preprocessing can be done here before the object is put into service.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqltSampleDao_1a272709956ecda875a1f2edc225f73be4">
+                <title>MysqltSampleDao::InsertSample ()</title> <emphasis></emphasis>
+                
+<para>function InsertSample</para>
+
+<para>This method retrieves a database connection object, starts a transaction, executes SQL insert statements and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqltSampleDao_1a775c55d24e887e3c8d051bb04d525894">
+                <title>MysqltSampleDao::DeleteSample ()</title> <emphasis></emphasis>
+                
+<para>function DeleteSample</para>
+
+<para>This method retrieves a database connection object, starts a transaction, executes SQL delete statements and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqltSampleDao_1a7c9cced93ba38e4da9c0d9635fa62b1f">
+                <title>MysqltSampleDao::FindSample ()</title> <emphasis></emphasis>
+                
+<para>function FindSample</para>
+
+<para>This method retrieves a database connection object, executes SQL select statements, parses recordsets and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqltSampleDao_1a042cca96a84f36547b56d9840f297c46">
+                <title>MysqltSampleDao::UpdateSample ()</title> <emphasis></emphasis>
+                
+<para>function UpdateSample</para>
+
+<para>This method retrieves a database connection object, starts a transaction, executes SQL update statements and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqltSampleDao_1abcce171c994d978503f4a82eae2d7ef1">
+                <title>MysqltSampleDao::SelectSampleRS ()</title> <emphasis></emphasis>
+                
+<para>function SelectSampleRS</para>
+
+<para>This method retrieves a database connection object, executes SQL select statements, parses recordsets and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqltSampleDao_1aff10b963a823a9edf753e2d56e0fd652">
+                <title>MysqltSampleDao::SelectSampleTO ()</title> <emphasis></emphasis>
+                
+<para>function SelectSampleTO</para>
+
+<para>This method retrieves a database connection object, executes SQL select statements, parses recordsets and catches any exceptions thrown.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqltSampleDao_1abfcfff7f7a608809e84e4961f40d530c">
+                <title>MysqltSampleDao::GetData ($RecordSet)</title> <emphasis></emphasis>
+                
+<para>function GetData</para>
+
+<para>This method uses PEAR style data retrieval to retrieve arrays containing the current row. FetchRow() internally moves to the next record after returning the current row.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classMysqltSampleDao_1aaa9c0d18e0c9b262e7c018b5fab80685">
+                <title>MysqltSampleDao::GetDataTO ($RecordSet)</title> <emphasis></emphasis>
+                
+<para>function GetDataTO</para>
+
+<para>This method uses PEAR style data retrieval to retrieve the current row as an object. FetchNextObject() internally moves to the next row automatically.</para>
+
+<para>public </para>
+
+            </section>
+</section>

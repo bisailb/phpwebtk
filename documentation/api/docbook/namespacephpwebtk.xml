@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="namespacephpwebtk">
+<title>phpwebtk</title>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>$Id$ PHP Web Toolkit Version 1.0.4 Alpha</para>
+
+<para>class <link linkend="classClient">Client</link></para>
+
+<para>This class is responsible for building a <link linkend="classRequest">Request</link> object and sending the <link linkend="classRequest">Request</link> object to the front controller for processing. The front controller then gives the response back to the end user.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>class <link linkend="classCommand">Command</link></para>
+
+<para>This class declares an interface for executing an operation.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>class <link linkend="classConfigDao">ConfigDao</link></para>
+
+<para>This class declares an interface for a type of Data Access Object (DAO).</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classController">Controller</link></para>
+
+<para>This class serves as a single entry point for handling all requests in the system. The front controller is responsible for delegating processes to various handlers while minimizing the coupling among these components by implementing flexible request handling mechanisms, and managing the choice of the next view to present to the end user.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>class <link linkend="classConvert">Convert</link></para>
+
+<para>This class provides some common data conversion functions.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+conversion</para>
+
+<para>class <link linkend="classCrypt">Crypt</link></para>
+
+<para>This class provides a simple interface to the mcrypt library. It can be used to encrypt and decrypt data. mcrypt was chosen because it supports a wide variety of block algorithms and cipher modes. For a complete list of supported algorithms and modes refer to the documentation of mcrypt.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+cryptography</para>
+
+<para>class <link linkend="classDaoFactory">DaoFactory</link></para>
+
+<para>This class declares an interface for operations that create abstract Data Access Objects (DAOs).</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classDigest">Digest</link></para>
+
+<para>This class provides a simple interface to the mhash library. It can be used to create both salted and unsalted message digests. mhash was chosen because it supports a wide variety of hash algorithms. For a complete list of supported hashes, refer to the documentation of mhash.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+cryptography</para>
+
+<para>class <link linkend="classHash">Hash</link></para>
+
+<para>This class provides a simple interface to the mhash library. mhash was chosen because it supports a wide variety of hash algorithms. For a complete list of supported hashes, refer to the documentation of mhash.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+cryptography</para>
+
+<para>class <link linkend="classHmac">Hmac</link></para>
+
+<para>The <link linkend="classHmac">Hmac</link> class provides a simple interface to the mhash library. It can be invoked to create both salted and unsalted hashed message authentication codes (HMAC). mhash was chosen because it supports a wide variety of hash algorithms. For a complete list of supported algorithms, refer to the documentation of mhash.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+cryptography</para>
+
+<para>class <link linkend="classHttpRequestBuilder">HttpRequestBuilder</link></para>
+
+<para>This class constructs the parts of the <link linkend="classRequest">Request</link> by implementing the <link linkend="classRequestBuilder">RequestBuilder</link> interface, defines and keeps track of the representation it creates and provides an interface for retrieving the <link linkend="classRequest">Request</link> object.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>$Id$ PHP Web Toolkit Version 1.0.2 Alpha</para>
+
+<para>class <link linkend="classHttpRequestHandler">HttpRequestHandler</link></para>
+
+<para>This class handles requests it is responsible for and can access its successor. If this class can handle the request, it does so; otherwise it it forwards the request to its successor.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+textprocessing</para>
+
+<para>class <link linkend="classInvoker">Invoker</link></para>
+
+<para>This class asks the command to carry out the request.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>class <link linkend="classKsesRequestHandler">KsesRequestHandler</link></para>
+
+<para>This class handles requests it is responsible for and can access its successor. If this class can handle the request, it does so; otherwise it forwards the request to its successor.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+textprocessing</para>
+
+<para>class <link linkend="classMysqlDaoFactory">MysqlDaoFactory</link></para>
+
+<para>This class implements the <link linkend="classDaoFactory">DaoFactory</link>&apos;s operations that create concrete MySQL Data Access Objects (DAOs).</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classMysqliDaoFactory">MysqliDaoFactory</link></para>
+
+<para>This class implements the <link linkend="classDaoFactory">DaoFactory</link>&apos;s operations that create concrete MySQL Data Access Objects (DAOs).</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classMysqliSampleDao">MysqliSampleDao</link></para>
+
+<para>This class defines a Data Access Object to be created by the corresponding <link linkend="classMysqliDaoFactory">MysqliDaoFactory</link> and implements the <link linkend="classSampleDao">SampleDao</link> interface.</para>
+
+<para>This class contains all MySQL specific code and SQL statements. The implementation details are hidden from the end user.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classMysqlSampleDao">MysqlSampleDao</link></para>
+
+<para>This class defines a Data Access Object to be created by the corresponding <link linkend="classMysqlDaoFactory">MysqlDaoFactory</link> and implements the <link linkend="classSampleDao">SampleDao</link> interface.</para>
+
+<para>This class contains all MySQL specific code and SQL statements. The implementation details are hidden from the end user.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classMysqltDaoFactory">MysqltDaoFactory</link></para>
+
+<para>This class implements the <link linkend="classDaoFactory">DaoFactory</link>&apos;s operations that create concrete MySQL Data Access Objects (DAOs).</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classMysqltSampleDao">MysqltSampleDao</link></para>
+
+<para>This class defines a Data Access Object to be created by the corresponding <link linkend="classMysqltDaoFactory">MysqltDaoFactory</link> and implements the <link linkend="classSampleDao">SampleDao</link> interface.</para>
+
+<para>This class contains all MySQL specific code and SQL statements. The implementation details are hidden from the end user.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classPException">PException</link></para>
+
+<para>This class is responsible for exception handling and inherits from the internal Exception class.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+debugging</para>
+
+<para>class <link linkend="classPostgres7DaoFactory">Postgres7DaoFactory</link></para>
+
+<para>This class implements the <link linkend="classDaoFactory">DaoFactory</link>&apos;s operations that create concrete PostgreSQL Data Access Objects (DAOs).</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classPostgres8DaoFactory">Postgres8DaoFactory</link></para>
+
+<para>This class implements the <link linkend="classDaoFactory">DaoFactory</link>&apos;s operations that create concrete PostgreSQL Data Access Objects (DAOs).</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classPrng">Prng</link></para>
+
+<para>This class provides a simple interface to two character devices, the rand() function and the mt_rand() function. The /dev/random character device is suitable for use when very high quality randomness is desired. The /dev/urandom character device will result in randomness that is merely cryptographically strong. The main difference between the two is that /dev/random is blocking and /dev/urandom is non-blocking. The rand() function uses the libc random number generator. However, mt_rand() is a drop-in replacement for rand() that uses a random number generator with known characteristics using the Mersenne Twister, that will produce randomnumbers four times faster than what the average libc rand() provides.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+mathematics</para>
+
+<para>class <link linkend="classRequest">Request</link></para>
+
+<para>This class represents the complex <link linkend="classRequest">Request</link> object under construction. The <link linkend="classRequestBuilder">RequestBuilder</link> builds the <link linkend="classRequest">Request</link> object&apos;s internal representation and defines the process by which it&apos;s assembled. This class includes classes that define the constituent parts, includng interfaces for assembling the parts into the final result.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>class <link linkend="classRequestBuilder">RequestBuilder</link></para>
+
+<para>This class specifies an abstract interface for creating parts of a <link linkend="classRequest">Request</link> object.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>class <link linkend="classRequestDirector">RequestDirector</link></para>
+
+<para>This class constructs a <link linkend="classRequest">Request</link> object using the <link linkend="classRequestBuilder">RequestBuilder</link> interface.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>abstract class <link linkend="classRequestHandler">RequestHandler</link></para>
+
+<para>This class defines an interface for handling the requests and optionally implements the successor link.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+textprocessing</para>
+
+<para>class <link linkend="classSampleDao">SampleDao</link></para>
+
+<para>Declares an interface for a type of Data Access Object (DAO).</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classSampleView">SampleView</link></para>
+
+<para>This class represents and displays information to the end user. The information that is used in a dynamic display is retrieved from a model. Handlers support views by encapsulating and adapting a model for use in a display.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+templates</para>
+
+<para>class <link linkend="classSession">Session</link></para>
+
+<para>This class enables data to be preserved across subsequent requests invoked by the end user.</para>
+
+<para>Additional measures must be taken to actively protect the integrity of a session.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+usermanagement</para>
+
+<para>$Id$ PHP Web Toolkit Version 1.0.3 Alpha</para>
+
+<para>class <link linkend="classSlashesRequestHandler">SlashesRequestHandler</link></para>
+
+<para>This class handles requests it is responsible for and can access its successor. If this class can handle the request, it does so; otherwise it forwards the request to its successor.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+textprocessing</para>
+
+<para>class StreamIO</para>
+
+<para>This class provides stream input and output operations and supports buffering for write operations. PHP will search for a protocol handler (also known as a wrapper) for schemes in the form of &quot;scheme://...&quot; unless URL-aware fopen wrappers and other wrappers are disabled.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+filesandfolders</para>
+
+<para>class <link linkend="classView">View</link></para>
+
+<para>This class knows how to perform the operation(s) associated with carrying out the request.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>class <link linkend="classViewCommand">ViewCommand</link></para>
+
+<para>This class defines a binding between a <link linkend="classView">View</link> object and an action, and implements Execute by invoking the corresponding operation(s) on the <link linkend="classView">View</link>.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+http</para>
+
+<para>class <link linkend="classXmlConfigDao">XmlConfigDao</link></para>
+
+<para>This class defines a Data Access Object (DAO) to be created by the corresponding <link linkend="classXmlDaoFactory">XmlDaoFactory</link> and implements the <link linkend="classConfigDao">ConfigDao</link> interface.</para>
+
+<para>This class contains all XML specific code and XPath statements. implementation details are hidden from the end user.</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases</para>
+
+<para>class <link linkend="classXmlDaoFactory">XmlDaoFactory</link></para>
+
+<para>This class implements the DAO Factory&apos;s operations that create concrete XML Data Access Objects (DAOs).</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>Brian Bisaillon <link xlink:href="mailto:bisailb@myprivacy.ca">bisailb@myprivacy.ca</link> </para>
+</formalpara>
+<formalpara><title>Copyright: </title>
+
+<para>Copyright (C) 2004-2016 by Brian Bisaillon</para>
+</formalpara>
+databases </para>
+                <para>Definition at line 6 of file client.class.php</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>client.class.php</para></listitem></itemizedlist></para>
+        </simplesect>
+</section>

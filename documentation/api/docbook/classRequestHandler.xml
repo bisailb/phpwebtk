@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classRequestHandler">
+<title>RequestHandler class Reference</title>
+<para>Inheritance diagram for RequestHandler</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classRequestHandler__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for RequestHandler</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classRequestHandler__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Successor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestHandler_1abc0e34ddc84f9f9cd8c99439ef5bae70">HandleRequest</link> (
+<link linkend="classRequest">Request</link> $Request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestHandler_1ad331861e9342e174777d944202b2625a">SetSuccessor</link> (
+<link linkend="classRequestHandler">RequestHandler</link> $Successor)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classRequestHandler_1abc0e34ddc84f9f9cd8c99439ef5bae70">
+                <title>RequestHandler::HandleRequest (Request $Request)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestHandler_1ad331861e9342e174777d944202b2625a">
+                <title>RequestHandler::SetSuccessor (RequestHandler $Successor)</title> <emphasis></emphasis>
+                
+<para>function SetSuccessor</para>
+
+<para>This method sets the Successor.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>$Successor</entry>
+                                <entry>
+<para>object of type Handler </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

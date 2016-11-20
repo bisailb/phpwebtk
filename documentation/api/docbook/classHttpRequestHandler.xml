@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classHttpRequestHandler">
+<title>HttpRequestHandler class Reference</title>
+<para>Inheritance diagram for HttpRequestHandler</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classHttpRequestHandler__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for HttpRequestHandler</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classHttpRequestHandler__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestHandler_1ab72616729ae1c9985dc5557fd2ec0c7a">AddSlashesDeep</link> (
+&amp; $request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestHandler_1ad1229d882fab0d072804abdc44f05a16">StripSlashesDeep</link> (
+&amp; $request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestHandler_1a941d55cf5913dda20d7b9d945bb09778">HandleRequest</link> (
+<link linkend="classRequest">Request</link> $Request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classHttpRequestHandler_1ab72616729ae1c9985dc5557fd2ec0c7a">
+                <title>HttpRequestHandler::AddSlashesDeep (&amp;$request)</title> <emphasis></emphasis>
+                
+<para>function AddSlashesDeep</para>
+
+<para>This method enables magic quotes at runtime. Magic-quotes was added to reduce code written by beginners from being dangerous.</para>
+
+<para>private 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>request</entry>
+                                <entry>
+<para>HTTP GET or HTTP POST request </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>request Modified HTTP GET or HTTP POST request </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classHttpRequestHandler_1ad1229d882fab0d072804abdc44f05a16">
+                <title>HttpRequestHandler::StripSlashesDeep (&amp;$request)</title> <emphasis></emphasis>
+                
+<para>function StripSlashesDeep</para>
+
+<para>This method disables magic quotes at runtime. If you disable magic quotes, you must be very careful to protect yourself from SQL injection attacks.</para>
+
+<para>private 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>request</entry>
+                                <entry>
+<para>HTTP GET or HTTP POST request </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>request Modified HTTP GET or HTTP POST request </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classHttpRequestHandler_1a941d55cf5913dda20d7b9d945bb09778">
+                <title>HttpRequestHandler::HandleRequest (Request $Request)</title> <emphasis></emphasis>
+                
+<para>function HandleRequest</para>
+
+<para>This method processes the request if certain conditions are met.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry><link linkend="classRequest">Request</link></entry>
+                                <entry>
+<para><link linkend="classRequest">Request</link> object </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

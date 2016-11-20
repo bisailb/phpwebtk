@@ -1,0 +1,92 @@
+.TH "Crypt" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Crypt \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP ()"
+.br
+.ti -1c
+.RI "\fBSetEncryptionKey\fP ($plaintext)"
+.br
+.ti -1c
+.RI "\fBEncrypt\fP ($plaintext)"
+.br
+.ti -1c
+.RI "\fBDecrypt\fP ($ciphertext)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Crypt::__construct ()"
+function __construct
+.PP
+This method is executed when an object is instantiated from this class\&. Preprocessing can be done here before the object is put into service\&.
+.PP
+public 
+.SH "Member Function Documentation"
+.PP 
+.SS "Crypt::Decrypt ( $ciphertext)"
+function Decrypt
+.PP
+This method initializes all buffers needed for decryption, decrypts data and deinitializes a decryption module\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIciphertext\fP Ciphertext 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+string Stripped plaintext 
+.RE
+.PP
+
+.SS "Crypt::Encrypt ( $plaintext)"
+function Encrypt
+.PP
+This method initializes all buffers needed for encryption, encrypts data and deinitializes an encryption module\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplaintext\fP Plaintext 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+string Hexadecimal encoded ciphertext 
+.RE
+.PP
+
+.SS "Crypt::SetEncryptionKey ( $plaintext)"
+function SetEncryptionKey
+.PP
+This method creates a encryption key according to the maximum supported key size of the opened mode and stores it in the XML configuration file\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIplaintext\fP Plaintext password 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+string Encryption key 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

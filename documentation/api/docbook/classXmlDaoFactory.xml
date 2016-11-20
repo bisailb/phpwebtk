@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classXmlDaoFactory">
+<title>XmlDaoFactory class Reference</title>
+<para>Inheritance diagram for XmlDaoFactory</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classXmlDaoFactory__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for XmlDaoFactory</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classXmlDaoFactory__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $XmlDaoFactory</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classXmlDaoFactory_1ac2e042fe0000f9e46eb0631e46e33727">GetInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classXmlDaoFactory_1acc7e7af739b22fb187d95e0ea12b3192">LoadXmlFile</link> (
+ $fileName,  $schemaName,  $whiteSpace)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classXmlDaoFactory_1aa1c881c6365d3c44acdf1d8a0de96261">GetConfigDao</link> (
+DomDocument $DomDocument)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classXmlDaoFactory_1ac2e042fe0000f9e46eb0631e46e33727">
+                <title>static XmlDaoFactory::GetInstance ()</title> <emphasis></emphasis>
+                
+<para>function GetInstance</para>
+
+<para>This method instantiates a new object from this class; more specifically, it&apos;s a singleton instance.</para>
+
+<para>public</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para><link linkend="classXmlDaoFactory">XmlDaoFactory</link> object instance </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classXmlDaoFactory_1acc7e7af739b22fb187d95e0ea12b3192">
+                <title>XmlDaoFactory::LoadXmlFile ($fileName, $schemaName, $whiteSpace=FALSE)</title> <emphasis></emphasis>
+                
+<para>function LoadXmlFile</para>
+
+<para>This method loads XML from a file, validates its associated XML Schema and optionally preserves white space.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fileName</entry>
+                                <entry>
+<para>XML file </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>schemaName</entry>
+                                <entry>
+<para>XML Schema file </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>whiteSpace</entry>
+                                <entry>
+<para>Preserve white space </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>DomDocument object instance </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classXmlDaoFactory_1aa1c881c6365d3c44acdf1d8a0de96261">
+                <title>XmlDaoFactory::GetConfigDao (DomDocument $DomDocument)</title> <emphasis></emphasis>
+                
+<para>function GetConfigDao</para>
+
+<para>The GetConfigDao method creates a new object of class <link linkend="classXmlConfigDao">XmlConfigDao</link>.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>DomDocument</entry>
+                                <entry>
+<para>DomDocument object </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para><link linkend="classXmlConfigDao">XmlConfigDao</link> object instance </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

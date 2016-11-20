@@ -1,0 +1,8 @@
+<map id="DaoFactory" name="DaoFactory">
+<area shape="rect" id="node2" href="$classMysqlDaoFactory.html" title="MysqlDaoFactory" alt="" coords="156,5,281,32"/>
+<area shape="rect" id="node3" href="$classMysqliDaoFactory.html" title="MysqliDaoFactory" alt="" coords="155,56,283,83"/>
+<area shape="rect" id="node4" href="$classMysqltDaoFactory.html" title="MysqltDaoFactory" alt="" coords="154,107,283,133"/>
+<area shape="rect" id="node5" href="$classPostgres7DaoFactory.html" title="Postgres7DaoFactory" alt="" coords="144,157,293,184"/>
+<area shape="rect" id="node6" href="$classPostgres8DaoFactory.html" title="Postgres8DaoFactory" alt="" coords="144,208,293,235"/>
+<area shape="rect" id="node7" href="$classXmlDaoFactory.html" title="XmlDaoFactory" alt="" coords="162,259,275,285"/>
+</map>

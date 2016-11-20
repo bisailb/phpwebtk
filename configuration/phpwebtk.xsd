@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+	<!-- The block algorithm to use for encryption and decryption of data. -->
+	<xs:simpleType name="blockAlgorithms">
+		<xs:restriction base="xs:string">
+			<!-- Rijndael 128-bit Encryption Algorithm -->
+			<xs:enumeration value="rijndael-128" />
+			<!-- Rijndael 192-bit Encryption Algorithm -->
+			<xs:enumeration value="rijndael-192" />
+			<!-- Rijndael 256-bit Encryption Algorithm -->
+			<xs:enumeration value="rijndael-256" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- The mode to use in combination with the block algorithm. -->
+	<xs:simpleType name="blockAlgorithmModes">
+		<xs:restriction base="xs:string">
+			<!-- Cipher Block Chaining Mode -->
+			<xs:enumeration value="cbc" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- The cache control method to use for session pages. -->
+	<xs:simpleType name="cacheLimiters">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="none" />
+			<!-- Setting the cache limiter to nocache disallows any client/proxy caching. -->
+			<xs:enumeration value="nocache" />
+			<!-- private disallows caching by proxies and permits the client to cache 
+				the contents. -->
+			<xs:enumeration value="private" />
+			<!-- In private mode, the Expire header sent to the client may cause confusion 
+				for some browsers, including Mozilla. You can avoid this problem by using 
+				private_no_expire mode. The expire header is never sent to the client in 
+				this mode. -->
+			<xs:enumeration value="private_no_expire" />
+			<!-- A value of public permits caching by proxies and the client. -->
+			<xs:enumeration value="public" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- MySQL compression protocol. -->
+	<xs:simpleType name="clientflagsMySQL">
+		<xs:restriction base="xs:integer">
+			<!-- MYSQL_CLIENT_COMPRESS -->
+			<xs:enumeration value="32" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- The driver to use when connecting to a MySQL database. -->
+	<xs:simpleType name="driversMySQL">
+		<xs:restriction base="xs:string">
+			<!-- MySQL w/o Transactions -->
+			<xs:enumeration value="mysql" />
+			<!-- MySQL with Transactions -->
+			<xs:enumeration value="mysqlt" />
+			<!-- MySQL Improved with Transactions -->
+			<xs:enumeration value="mysqli" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- The external resource (file) that will be used as an entropy source 
+		in the Initialization Vector (IV) creation process. -->
+	<xs:simpleType name="entropyFiles">
+		<xs:restriction base="xs:string">
+			<!-- Read Data From /dev/random -->
+			<xs:enumeration value="/dev/random" />
+			<!-- Read Data From /dev/urandom -->
+			<xs:enumeration value="/dev/urandom" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- The current fetch mode for the MySQL database. -->
+	<xs:simpleType name="fetchmodesMySQL">
+		<xs:restriction base="xs:integer">
+			<!-- ADODB_FETCH_DEFAULT -->
+			<xs:enumeration value="0" />
+			<!-- ADODB_FETCH_NUM -->
+			<xs:enumeration value="1" />
+			<!-- ADODB_FETCH_ASSOC -->
+			<xs:enumeration value="2" />
+			<!-- ADODB_FETCH_BOTH -->
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- The algorithm used to create hashed message digests and message authentication 
+		codes. -->
+	<xs:simpleType name="hashAlgorithms">
+		<xs:restriction base="xs:integer">
+			<!-- SHA 256-bit hash algorithm -->
+			<xs:enumeration value="17" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- Allows you to specify the hash algorithm used to generate the session 
+		IDs. -->
+	<xs:simpleType name="hashFunctions">
+		<xs:restriction base="xs:integer">
+			<!-- SHA 128-bit hash algorithm -->
+			<xs:enumeration value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- Allows you to define how many bits are stored in each character when 
+		converting the binary hash data to something readable. -->
+	<xs:simpleType name="hashBitsPerChar">
+		<xs:restriction base="xs:string">
+			<!-- (0-9, a-f) -->
+			<xs:enumeration value="4" />
+			<!-- (0-9, a-v) -->
+			<xs:enumeration value="5" />
+			<!-- (0-9, a-z, A-Z, "-", ",") -->
+			<xs:enumeration value="6" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- Gives a path to an external resource (file) or internal function that 
+		will be used as an entropy source for salted/unsalted message digests or 
+		hashed message authentication codes. -->
+	<xs:simpleType name="randomDevices">
+		<xs:restriction base="xs:integer">
+			<!-- Read Data From /dev/random -->
+			<xs:enumeration value="0" />
+			<!-- Read Data From /dev/urandom -->
+			<xs:enumeration value="1" />
+			<!-- Pseudo-Random Integer -->
+			<xs:enumeration value="2" />
+			<!-- Merseine Twister RNG -->
+			<xs:enumeration value="3" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- External resource (file) that will be used as an entropy source in 
+		the the Initialization Vector (IV) creation process. -->
+	<xs:simpleType name="randomDevicesMcrypt">
+		<xs:restriction base="xs:integer">
+			<!-- Read Data From /dev/random -->
+			<xs:enumeration value="0" />
+			<!-- Read Data From /dev/urandom -->
+			<xs:enumeration value="1" />
+			<!-- System Random Number Generator -->
+			<xs:enumeration value="2" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="phpwebtk">
+		<xs:complexType>
+			<xs:sequence>
+
+				<xs:element name="crypt">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- External resource (file) that will be used as an entropy source 
+								in the Initialization Vector (IV) creation process. -->
+							<xs:element name="randomDevice" type="randomDevicesMcrypt" />
+							<!-- The block algorithm to use for encryption and decryption of data. -->
+							<xs:element name="blockAlgorithm" type="blockAlgorithms" />
+							<!-- The mode to use in combination with the block algorithm. -->
+							<xs:element name="blockAlgorithmMode" type="blockAlgorithmModes" />
+							<!-- The key generated by the Crypt->SetEncryptionKey() method. -->
+							<xs:element name="encryptionKey" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="digest">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- Gives a path to an external resource (file) or internal function 
+								that will be used as an entropy source for salted/unsalted message digests 
+								or hashed message authentication codes. -->
+							<xs:element name="randomDevice" type="randomDevices" />
+							<!-- Generates a key according to the Salted S2K algorithm as specified 
+								in the OpenPGP document (RFC 2440). -->
+							<xs:element name="saltedS2kAlgorithm" type="xs:boolean" />
+							<!-- The algorithm used to create hashed message digests and message 
+								authentication codes. -->
+							<xs:element name="digestAlgorithm" type="hashAlgorithms" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="hmac">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- Gives a path to an external resource (file) or internal function 
+								that will be used as an entropy source for salted/unsalted message digests 
+								or hashed message authentication codes. -->
+							<xs:element name="randomDevice" type="randomDevices" />
+							<!-- Generates a key according to the Salted S2K algorithm as specified 
+								in the OpenPGP document (RFC 2440). -->
+							<xs:element name="saltedS2kAlgorithm" type="xs:boolean" />
+							<!-- The algorithm used to create hashed message digests and message 
+								authentication codes. -->
+							<xs:element name="hmacAlgorithm" type="hashAlgorithms" />
+							<!-- The key generated by the Hmac->SetHmacKey() method. -->
+							<xs:element name="hmacKey" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="mysql">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- The driver to use when connecting to a MySQL database. -->
+							<xs:element name="driver" type="driversMySQL" />
+							<!-- The user ID to connect to the MySQL database. -->
+							<xs:element name="username" type="xs:string" />
+							<!-- The password to connect to the MySQL database. -->
+							<xs:element name="password" type="xs:string" />
+							<!-- The hostname or DSN to connect to the MySQL database. -->
+							<xs:element name="hostname" type="xs:string" />
+							<!-- The name of the database to connect to. -->
+							<xs:element name="database" type="xs:string" />
+							<!-- Whether to use persisent database connections. -->
+							<xs:element name="persistent" type="xs:boolean" />
+							<!-- Whether to enable debugging. -->
+							<xs:element name="debug" type="xs:boolean" />
+							<!-- The current fetch mode for the MySQL database. -->
+							<xs:element name="fetchmode" type="fetchmodesMySQL" />
+							<!-- MySQL client flags. -->
+							<xs:element name="clientflags" type="clientflagsMySQL" />
+							<!-- The path to the socket file for the MySQL database. -->
+							<xs:element name="socket" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+
+				</xs:element>
+				<xs:element name="prng">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- External resource (file) that will be used as an entropy source 
+								in the Initialization Vector (IV) creation process. -->
+							<xs:element name="randomDevice" type="randomDevicesMcrypt" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="session">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- The argument that is passed to the save handler. If you choose 
+								the default files handler, this is the path where the files are created. 
+								There is an optional N argument to this directive that determines the number 
+								of directory levels your session files will be spread around in. In order 
+								to use N you must create all of these directories before use. If N is used 
+								and greater than 0 then automatic garbage collection will not be performed. -->
+							<xs:element name="savePath" type="xs:string" />
+							<!-- The name of the session that is used as cookie name. It should 
+								only contain alphanumeric characters. -->
+							<xs:element name="name" type="xs:string" />
+							<!-- The external resource (file) that will be used as an entropy 
+								source in the Initialization Vector (IV) creation process. -->
+							<xs:element name="entropyFile" type="entropyFiles" />
+							<!-- The number of bytes that will be read from the entropy file. -->
+							<xs:element name="entropyLength" type="xs:integer" />
+							<!-- Whether the module will only use cookies to store the session 
+								id on the client side. -->
+							<xs:element name="useOnlyCookies" type="xs:boolean" />
+							<!-- The lifetime of the cookie in seconds that is sent to the browser. 
+								Zero means "until the browser is closed." -->
+							<xs:element name="cookieLifetime" type="xs:integer" />
+							<!-- The path to set in session_cookie. -->
+							<xs:element name="cookiePath" type="xs:string" />
+							<!-- The domain to set in session_cookie. -->
+							<xs:element name="cookieDomain" type="xs:string" />
+							<!-- Whether cookies should only be sent over secure connections. -->
+							<xs:element name="cookieSecure" type="xs:boolean" />
+							<xs:element name="cacheLimiter" type="cacheLimiters" />
+							<!-- Time-to-live for cached session pages in minutes, this has no 
+								effect for the nocache limiter. -->
+							<xs:element name="cacheExpire" type="xs:integer" />
+							<!-- Allows you to specify the hash algorithm used to generate the 
+								session IDs. -->
+							<xs:element name="hashFunction" type="hashFunctions" />
+							<!-- Allows you to define how many bits are stored in each character 
+								when converting the binary hash data to something readable. -->
+							<xs:element name="hashBitsPerCharacter" type="hashBitsPerChar" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

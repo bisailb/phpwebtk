@@ -1,0 +1,105 @@
+.TH "Hash" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Hash \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGetHashInfo\fP ()"
+.br
+.ti -1c
+.RI "\fBGetBlockSize\fP ($hashId)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGetSalt\fP ($bytes, $source)"
+.br
+.ti -1c
+.RI "\fBCompareCiphertextData\fP ($ciphertext, $genCiphertext)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "Hash::CompareCiphertextData ( $ciphertext,  $genCiphertext)\fC [static]\fP"
+function CompareCiphertextData
+.PP
+This method compares the original ciphertext to the generated ciphertext\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIciphertext\fP Original ciphertext 
+.br
+\fIgenCiphertext\fP Generated ciphertext 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+boolean TRUE|FALSE 
+.RE
+.PP
+
+.SS "Hash::GetBlockSize ( $hashId)"
+function GetBlockSize
+.PP
+This method retrieves the block size of the specified hash\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIhashId\fP \fBHash\fP identifier 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+mixed Block size|FALSE 
+.RE
+.PP
+
+.SS "Hash::GetHashInfo ()"
+function GetHashInfo
+.PP
+This method displays the hash id, the algorithm and the block size for each hash algorithm supported by the mhash library\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+string \fBHash\fP identifier, algorithm and output size 
+.RE
+.PP
+
+.SS "Hash::GetSalt ( $bytes,  $source)\fC [static]\fP"
+function GetSalt
+.PP
+This method retrieves random bits from a Pseudo-Random Number Generator (PRNG)\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbytes\fP Size of salt in bytes 
+.br
+\fIsource\fP Random source of entropy 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+string Binary encoded salt 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

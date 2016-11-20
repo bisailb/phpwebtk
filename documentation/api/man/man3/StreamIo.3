@@ -1,0 +1,174 @@
+.TH "StreamIo" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+StreamIo \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP ($fileOrUrl)"
+.br
+.ti -1c
+.RI "\fBOpen\fP ($mode)"
+.br
+.ti -1c
+.RI "\fBRead\fP ()"
+.br
+.ti -1c
+.RI "\fBReadLength\fP ($length)"
+.br
+.ti -1c
+.RI "\fBReadStream\fP ()"
+.br
+.ti -1c
+.RI "\fBReadStreamLength\fP ($length)"
+.br
+.ti -1c
+.RI "\fBWrite\fP ($data)"
+.br
+.ti -1c
+.RI "\fBWriteLength\fP ($data, $length)"
+.br
+.ti -1c
+.RI "\fBClose\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "StreamIo::__construct ( $fileOrUrl)"
+function __construct
+.PP
+This method is executed when an object is instantiated from this class\&. Preprocessing can be done here before the object is put into service\&.
+.PP
+public 
+.SH "Member Function Documentation"
+.PP 
+.SS "StreamIo::Close ()"
+function Close
+.PP
+This method closes a file or a stream\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+resource File pointer 
+.RE
+.PP
+
+.SS "StreamIo::Open ( $mode)"
+function Open
+.PP
+This method opens a file or stream\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImode\fP Type of access 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+resource File pointer 
+.RE
+.PP
+
+.SS "StreamIo::Read ()"
+function Read
+.PP
+This method reads all bytes from the file pointer (binary-safe)\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+string File contents 
+.RE
+.PP
+
+.SS "StreamIo::ReadLength ( $length)"
+function ReadLength
+.PP
+This method reads a specific number of bytes from the file pointer (binary-safe)\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlength\fP Length in bytes 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+string File contents 
+.RE
+.PP
+
+.SS "StreamIo::ReadStream ()"
+function ReadStream
+.PP
+This method reads all bytes from the stream pointer (binary-safe)\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+string Stream contents 
+.RE
+.PP
+
+.SS "StreamIo::ReadStreamLength ( $length)"
+function ReadStreamLength
+.PP
+This method reads a specific number of bytes from the stream pointer (binary-safe)\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlength\fP Length in bytes 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+string Stream contents 
+.RE
+.PP
+
+.SS "StreamIo::Write ( $data)"
+function Write
+.PP
+This method writes all data to the file pointer (binary-safe)\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdata\fP Data to write 
+.RE
+.PP
+
+.SS "StreamIo::WriteLength ( $data,  $length)"
+function WriteLength
+.PP
+This method writes a specific number of bytes to the file pointer (binary-safe)\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdata\fP Data to write 
+.br
+\fIlength\fP Length in bytes 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

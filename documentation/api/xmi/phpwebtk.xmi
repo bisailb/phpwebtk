@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMI xmlns:UML="org.omg/standards/UML" verified="false" timestamp="" xmi.version="1.2">
+<XMI.header>
+<XMI.documentation>
+<XMI.exporter>PHP2XMI</XMI.exporter>
+<XMI.exporterVersion>1.0</XMI.exporterVersion>
+<XMI.exporterEncoding>UnicodeUTF8</XMI.exporterEncoding>
+</XMI.documentation>
+<XMI.model xmi.name="php2xmi" />
+<XMI.metamodel xmi.name="UML" href="UML.xml" xmi.version="1.3" />
+</XMI.header>
+<XMI.content>
+<UML:Model>
+<UML:Namespace.ownedElement>
+<UML:Stereotype visibility="public" xmi.id="4" name="my-stereotype" />
+<UML:Stereotype visibility="public" xmi.id="5" name="datatype" />
+<UML:Stereotype visibility="public" xmi.id="6" name="interface" />
+<UML:DataType stereotype="5" visibility="public" xmi.id="9" name="mixed"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="12" name="void"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="32" name="*"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="36" name="string"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="53" name="integer"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="81" name="boolean"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="170" name="request"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="220" name="Database"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="297" name="Exception"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="306" name="Postgres7SampleDao"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="315" name="Postgres8SampleDao"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="356" name="array"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="375" name="resource"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="402" name="DOMDocument"/>
+<UML:DataType stereotype="5" visibility="public" xmi.id="413" name="DomDocument"/>
+<UML:Package visibility="public" xmi.id="420" name="package.phpwebtk">
+<UML:Namespace.ownedElement>
+<UML:Class visibility="public" xmi.id="8" name="Client">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="10" value="" type="mixed" name="Client" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="11" value="" type="mixed" name="Request"/>
+<UML:Operation visibility="private" xmi.id="13" type="void" name="BuildRequest">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="14" type="void" name="SendRequest">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="15" name="Command" isAbstract="true">
+<UML:Classifier.feature>
+<UML:Operation visibility="public" xmi.id="16" type="void" name="Execute" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="18" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="19" name="ConfigDao" isAbstract="true">
+<UML:Classifier.feature>
+<UML:Operation visibility="public" xmi.id="20" type="void" name="GetElementsByPath" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="21" value="" type="mixed" name="expression"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="22" type="void" name="SetElementByPath" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="23" value="" type="mixed" name="expression"/>
+<UML:Parameter visibility="public" xmi.id="24" value="" type="mixed" name="data"/>
+<UML:Parameter visibility="public" xmi.id="25" value="" type="mixed" name="fileName"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="26" name="Controller">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="27" value="" type="mixed" name="Controller" ownerScope="classifier"/>
+<UML:Operation visibility="public" xmi.id="28" type="void" name="ProcessRequest">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="29" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="30" type="void" name="Dispatch">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="31" value="" type="Request" name="Request"/>
+<UML:Parameter visibility="public" xmi.id="33" value="" type="*" name="viewName"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="34" name="Convert">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="35" value="" type="mixed" name="Convert" ownerScope="classifier"/>
+<UML:Operation visibility="public" xmi.id="37" type="string" name="Hex2Bin">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="38" value="" type="*" name="hexData"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="39" name="Crypt">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="40" value="" type="mixed" name="Crypt" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="41" value="" type="mixed" name="Hash"/>
+<UML:Attribute visibility="private" xmi.id="42" value="" type="mixed" name="XmlConfigDao"/>
+<UML:Attribute visibility="private" xmi.id="43" value="" type="mixed" name="Convert"/>
+<UML:Attribute visibility="private" xmi.id="44" value="" type="mixed" name="encryptionDescriptor"/>
+<UML:Attribute visibility="private" xmi.id="45" value="" type="mixed" name="initializationVector"/>
+<UML:Attribute visibility="private" xmi.id="46" value="" type="mixed" name="randomDevice"/>
+<UML:Attribute visibility="private" xmi.id="47" value="" type="mixed" name="blockAlgorithm"/>
+<UML:Attribute visibility="private" xmi.id="48" value="" type="mixed" name="blockAlgorithmMode"/>
+<UML:Attribute visibility="private" xmi.id="49" value="" type="mixed" name="encryptionKey"/>
+<UML:Attribute visibility="private" xmi.id="50" value="" type="mixed" name="hmacAlgorithm"/>
+<UML:Attribute visibility="private" xmi.id="51" value="" type="mixed" name="hmacAlgorithmBlockSize"/>
+<UML:Operation visibility="public" xmi.id="52" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="54" type="integer" name="GetIvSize">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="55" type="integer" name="GetKeySize">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="56" type="integer" name="GetBlockSize">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="57" type="mixed" name="OpenModule">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="58" type="mixed" name="GetRandomIv">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="59" type="mixed" name="SetRandomIv">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="60" type="string" name="SetEncryptionKey">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="61" value="" type="*" name="plaintext"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="62" type="string" name="Encrypt">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="63" value="" type="*" name="plaintext"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="64" type="string" name="Decrypt">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="65" value="" type="*" name="ciphertext"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="66" type="void" name="CloseModule">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="67" name="DaoFactory" isAbstract="true">
+<UML:Classifier.feature>
+<UML:Operation visibility="public" xmi.id="68" type="mixed" name="GetDaoFactory" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="69" value="" type="mixed" name="driver"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="70" name="Digest">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="71" value="" type="mixed" name="Digest" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="72" value="" type="mixed" name="Hash"/>
+<UML:Attribute visibility="private" xmi.id="73" value="" type="mixed" name="XmlConfigDao"/>
+<UML:Attribute visibility="private" xmi.id="74" value="" type="mixed" name="saltedS2kAlgorithm"/>
+<UML:Attribute visibility="private" xmi.id="75" value="" type="mixed" name="digestAlgorithm"/>
+<UML:Attribute visibility="private" xmi.id="76" value="" type="mixed" name="digestAlgorithmBlockSize"/>
+<UML:Attribute visibility="private" xmi.id="77" value="" type="mixed" name="randomDevice"/>
+<UML:Operation visibility="public" xmi.id="78" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="79" type="string" name="GetDigest">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="80" value="" type="*" name="plaintext"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="82" type="boolean" name="IsValidDigest">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="83" value="" type="*" name="ciphertext"/>
+<UML:Parameter visibility="public" xmi.id="84" value="" type="*" name="plaintext"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="85" name="Hash">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="86" value="" type="mixed" name="Hash" ownerScope="classifier"/>
+<UML:Operation visibility="public" xmi.id="87" type="string" name="GetHashInfo">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="88" type="mixed" name="GetBlockSize">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="89" value="" type="*" name="hashId"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="90" type="string" name="GetSalt">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="91" value="" type="*" name="bytes"/>
+<UML:Parameter visibility="public" xmi.id="92" value="" type="*" name="source"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="93" type="boolean" name="CompareCiphertextData">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="94" value="" type="*" name="ciphertext"/>
+<UML:Parameter visibility="public" xmi.id="95" value="" type="*" name="genCiphertext"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="96" name="Hmac">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="97" value="" type="mixed" name="Hmac" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="98" value="" type="mixed" name="Hash"/>
+<UML:Attribute visibility="private" xmi.id="99" value="" type="mixed" name="XmlConfigDao"/>
+<UML:Attribute visibility="private" xmi.id="100" value="" type="mixed" name="randomDevice"/>
+<UML:Attribute visibility="private" xmi.id="101" value="" type="mixed" name="saltedS2kAlgorithm"/>
+<UML:Attribute visibility="private" xmi.id="102" value="" type="mixed" name="hmacAlgorithm"/>
+<UML:Attribute visibility="private" xmi.id="103" value="" type="mixed" name="hmacKey"/>
+<UML:Attribute visibility="private" xmi.id="104" value="" type="mixed" name="hmacAlgorithmBlockSize"/>
+<UML:Operation visibility="public" xmi.id="105" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="106" type="void" name="SetHmacKey">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="107" value="" type="*" name="plaintext"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="108" type="string" name="GetHmac">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="109" value="" type="*" name="plaintext"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="110" type="boolean" name="IsValidHmac">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="111" value="" type="*" name="ciphertext"/>
+<UML:Parameter visibility="public" xmi.id="112" value="" type="*" name="plaintext"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="113" name="RequestBuilder" isAbstract="true">
+<UML:Classifier.feature>
+<UML:Operation visibility="public" xmi.id="114" type="void" name="BuildHttpAccept" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="115" type="void" name="BuildHttpAcceptCharset" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="116" type="void" name="BuildHttpAcceptEncoding" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="117" type="void" name="BuildHttpAcceptLanguage" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="118" type="void" name="BuildHttpConnection" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="119" type="void" name="BuildHttpGet" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="120" type="void" name="BuildHttpHost" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="121" type="void" name="BuildHttpPost" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="122" type="void" name="BuildHttpReferer" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="123" type="void" name="BuildHttpUserAgent" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="124" type="void" name="BuildQueryString" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="125" type="void" name="BuildRemoteAddress" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="126" type="void" name="BuildRemoteHost" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="127" type="void" name="BuildRemotePort" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="128" type="void" name="BuildRemoteProxyAddr" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="129" type="void" name="BuildRemoteProxyHost" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="130" type="void" name="BuildRequestMethod" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="131" type="void" name="BuildRequestUri" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="132" type="void" name="BuildServerProtocol" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="133" type="void" name="GetRequest" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="134" name="HttpRequestBuilder">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="135" value="" type="mixed" name="HttpRequestBuilder" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="136" value="" type="mixed" name="Request"/>
+<UML:Attribute visibility="private" xmi.id="137" value="" type="mixed" name="ipAddress"/>
+<UML:Attribute visibility="private" xmi.id="138" value="" type="mixed" name="ipAddresses"/>
+<UML:Attribute visibility="private" xmi.id="139" value="" type="mixed" name="proxyAddress"/>
+<UML:Operation visibility="public" xmi.id="140" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="141" type="HttpRequestBuilder" name="GetInstance">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="142" type="void" name="GetHttpClientIPAddress">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="143" type="void" name="BuildHttpAccept">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="144" type="void" name="BuildHttpAcceptCharset">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="145" type="void" name="BuildHttpAcceptEncoding">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="146" type="void" name="BuildHttpAcceptLanguage">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="147" type="void" name="BuildHttpConnection">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="148" type="void" name="BuildHttpGet">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="149" type="void" name="BuildHttpHost">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="150" type="void" name="BuildHttpPost">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="151" type="void" name="BuildHttpReferer">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="152" type="void" name="BuildHttpUserAgent">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="153" type="void" name="BuildQueryString">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="154" type="void" name="BuildRemoteAddress">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="155" type="void" name="BuildRemoteHost">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="156" type="void" name="BuildRemotePort">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="157" type="void" name="BuildRemoteProxyAddr">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="158" type="void" name="BuildRemoteProxyHost">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="159" type="void" name="BuildRequestMethod">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="160" type="void" name="BuildRequestUri">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="161" type="void" name="BuildServerProtocol">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="162" type="Request" name="GetRequest">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="163" name="RequestHandler" isAbstract="true">
+<UML:Classifier.feature>
+<UML:Attribute visibility="protected" xmi.id="164" value="" type="mixed" name="Successor"/>
+<UML:Operation visibility="public" xmi.id="165" type="void" name="HandleRequest" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="166" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="167" type="void" name="SetSuccessor">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="168" value="" type="RequestHandler" name="Successor"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="169" name="HttpRequestHandler">
+<UML:Classifier.feature>
+<UML:Operation visibility="private" xmi.id="171" type="request" name="AddSlashesDeep">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="172" value="" type="*" name="request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="173" type="request" name="StripSlashesDeep">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="174" value="" type="*" name="request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="175" type="void" name="HandleRequest">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="176" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="177" name="Invoker">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="178" value="" type="mixed" name="Invoker" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="179" value="" type="mixed" name="Command"/>
+<UML:Operation visibility="public" xmi.id="180" type="void" name="SetCommand">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="181" value="" type="Command" name="Command"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="182" type="void" name="ExecuteCommand">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="183" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="184" name="KsesRequestHandler">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="185" value="" type="mixed" name="KsesRequestHandler" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="186" value="" type="mixed" name="Kses"/>
+<UML:Operation visibility="public" xmi.id="187" type="void" name="BasicTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="188" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="189" type="void" name="CharacterFormatTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="190" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="191" type="void" name="OutputTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="192" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="193" type="void" name="BlockTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="194" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="195" type="void" name="LinkTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="196" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="197" type="void" name="FrameTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="198" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="199" type="void" name="InputTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="200" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="201" type="void" name="ListTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="202" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="203" type="void" name="ImageTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="204" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="205" type="void" name="TableTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="206" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="207" type="void" name="StyleTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="208" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="209" type="void" name="MetaInformationTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="210" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="211" type="void" name="ProgrammingTags">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="212" value="" type="mixed" name="Kses5"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="213" type="void" name="HandleRequest">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="214" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="215" name="MysqlDaoFactory">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="216" value="" type="mixed" name="MysqlDaoFactory" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="217" value="" type="mixed" name="dsn"/>
+<UML:Operation visibility="public" xmi.id="218" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="219" type="MysqlDaoFactory" name="GetInstance" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="221" type="Database" name="CreateConnection" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="222" value="" type="*" name="dsn"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="224" type="MysqlSampleDao" name="GetSampleDao">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="225" name="MysqliDaoFactory">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="226" value="" type="mixed" name="MysqliDaoFactory" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="227" value="" type="mixed" name="dsn"/>
+<UML:Operation visibility="public" xmi.id="228" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="229" type="MysqliDaoFactory" name="GetInstance" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="230" type="Database" name="CreateConnection" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="231" value="" type="*" name="dsn"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="233" type="MysqliSampleDao" name="GetSampleDao">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="234" name="SampleDao" isAbstract="true">
+<UML:Classifier.feature>
+<UML:Operation visibility="public" xmi.id="235" type="void" name="InsertSample" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="236" type="void" name="DeleteSample" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="237" type="void" name="FindSample" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="238" type="void" name="UpdateSample" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="239" type="void" name="SelectSampleRS" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="240" type="void" name="SelectSampleTO" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="241" type="void" name="GetData" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="242" value="" type="mixed" name="RecordSet"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="243" type="void" name="GetDataTO" isAbstract="true">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="244" value="" type="mixed" name="RecordSet"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="232" name="MysqliSampleDao">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="245" value="" type="mixed" name="dsn"/>
+<UML:Operation visibility="public" xmi.id="246" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="247" value="" type="mixed" name="dsn"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="248" type="void" name="InsertSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="249" type="void" name="DeleteSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="250" type="void" name="FindSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="251" type="void" name="UpdateSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="252" type="void" name="SelectSampleRS">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="253" type="void" name="SelectSampleTO">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="254" type="void" name="GetData">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="255" value="" type="mixed" name="RecordSet"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="256" type="void" name="GetDataTO">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="257" value="" type="mixed" name="RecordSet"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="223" name="MysqlSampleDao">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="258" value="" type="mixed" name="MysqlSampleDao" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="259" value="" type="mixed" name="dsn"/>
+<UML:Operation visibility="public" xmi.id="260" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="261" value="" type="mixed" name="dsn"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="262" type="void" name="InsertSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="263" type="void" name="DeleteSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="264" type="void" name="FindSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="265" type="void" name="UpdateSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="266" type="void" name="SelectSampleRS">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="267" type="void" name="SelectSampleTO">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="268" type="void" name="GetData">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="269" value="" type="mixed" name="RecordSet"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="270" type="void" name="GetDataTO">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="271" value="" type="mixed" name="RecordSet"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="272" name="MysqltDaoFactory">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="273" value="" type="mixed" name="MysqltDaoFactory" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="274" value="" type="mixed" name="dsn"/>
+<UML:Operation visibility="public" xmi.id="275" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="276" type="MysqltDaoFactory" name="GetInstance" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="277" type="Database" name="CreateConnection" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="278" value="" type="*" name="dsn"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="280" type="MysqltSampleDao" name="GetSampleDao">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="279" name="MysqltSampleDao">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="281" value="" type="mixed" name="MysqltSampleDao" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="282" value="" type="mixed" name="dsn"/>
+<UML:Operation visibility="public" xmi.id="283" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="284" value="" type="mixed" name="dsn"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="285" type="void" name="InsertSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="286" type="void" name="DeleteSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="287" type="void" name="FindSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="288" type="void" name="UpdateSample">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="289" type="void" name="SelectSampleRS">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="290" type="void" name="SelectSampleTO">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="291" type="void" name="GetData">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="292" value="" type="mixed" name="RecordSet"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="293" type="void" name="GetDataTO">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="294" value="" type="mixed" name="RecordSet"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="295" name="PException">
+<UML:Classifier.feature>
+<UML:Operation visibility="public" xmi.id="296" type="void" name="Display" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="298" value="" type="Exception" name="Exception"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="299" name="Postgres7DaoFactory">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="300" value="" type="mixed" name="Postgres7DaoFactory" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="301" value="" type="mixed" name="dsn"/>
+<UML:Operation visibility="public" xmi.id="302" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="303" type="Postgres7DaoFactory" name="GetInstance" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="304" type="Database" name="CreateConnection" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="305" value="" type="*" name="dsn"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="307" type="Postgres7SampleDao" name="GetSampleDao">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="308" name="Postgres8DaoFactory">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="309" value="" type="mixed" name="Postgres8DaoFactory" ownerScope="classifier"/>
+<UML:Attribute visibility="private" xmi.id="310" value="" type="mixed" name="dsn"/>
+<UML:Operation visibility="public" xmi.id="311" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="312" type="Postgres8DaoFactory" name="GetInstance" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="313" type="Database" name="CreateConnection" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="314" value="" type="*" name="dsn"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="316" type="Postgres8SampleDao" name="GetSampleDao">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="317" name="Prng">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="318" value="" type="mixed" name="Prng" ownerScope="classifier"/>
+<UML:Operation visibility="public" xmi.id="319" type="mixed" name="GetPseudoRandomValue">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="320" value="" type="*" name="source"/>
+<UML:Parameter visibility="public" xmi.id="321" value="" type="*" name="length"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="17" name="Request">
+<UML:Classifier.feature>
+<UML:Operation visibility="public" xmi.id="322" type="void" name="SetProperty">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="323" value="" type="mixed" name="propertyName"/>
+<UML:Parameter visibility="public" xmi.id="324" value="" type="mixed" name="requestPart"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="325" name="RequestDirector">
+<UML:Classifier.feature>
+<UML:Operation visibility="public" xmi.id="326" type="void" name="ConstructRequest">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="327" value="" type="RequestBuilder" name="RequestBuilder"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="328" name="SampleView">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="329" value="" type="mixed" name="Request"/>
+<UML:Attribute visibility="private" xmi.id="330" value="" type="mixed" name="Smarty"/>
+<UML:Attribute visibility="private" xmi.id="331" value="" type="mixed" name="SecurityPolicy"/>
+<UML:Operation visibility="public" xmi.id="332" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="333" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="334" type="void" name="SetSmartyCaching">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="335" type="void" name="SetSmartyCompiler">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="336" type="void" name="SetSmartyConfiguration">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="337" type="void" name="SetSmartyDebugging">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="338" type="void" name="SetSmartyFilters">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="339" type="void" name="SetSmartySecurity">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="340" type="void" name="SetSmartyMiscellaneous">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="341" type="void" name="SetViewTemplate">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="342" type="void" name="Display">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="343" name="Session">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="344" value="" type="mixed" name="XmlConfigDao"/>
+<UML:Attribute visibility="private" xmi.id="345" value="" type="mixed" name="savePath"/>
+<UML:Attribute visibility="private" xmi.id="346" value="" type="mixed" name="name"/>
+<UML:Attribute visibility="private" xmi.id="347" value="" type="mixed" name="cookieLifetime"/>
+<UML:Attribute visibility="private" xmi.id="348" value="" type="mixed" name="cookiePath"/>
+<UML:Attribute visibility="private" xmi.id="349" value="" type="mixed" name="cookieDomain"/>
+<UML:Attribute visibility="private" xmi.id="350" value="" type="mixed" name="cookieSecure"/>
+<UML:Attribute visibility="private" xmi.id="351" value="" type="mixed" name="cacheLimiter"/>
+<UML:Attribute visibility="private" xmi.id="352" value="" type="mixed" name="cacheExpire"/>
+<UML:Operation visibility="public" xmi.id="353" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="354" type="integer" name="GetCacheExpire">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="355" type="string" name="GetCacheLimiter">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="357" type="array" name="GetCookieParameters">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="358" type="string" name="GetId">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="359" type="string" name="GetName">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="360" type="string" name="GetSavePath">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="361" type="void" name="OpenSession">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="362" type="void" name="CloseSession">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="363" name="SlashesRequestHandler">
+<UML:Classifier.feature>
+<UML:Operation visibility="private" xmi.id="364" type="request" name="AddSlashesDeep">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="365" value="" type="*" name="request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="private" xmi.id="366" type="request" name="StripSlashesDeep">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="367" value="" type="*" name="request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="368" type="void" name="HandleRequest">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="369" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="370" name="StreamIo">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="371" value="" type="mixed" name="fileOrUrl"/>
+<UML:Attribute visibility="private" xmi.id="372" value="" type="mixed" name="handle"/>
+<UML:Operation visibility="public" xmi.id="373" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="374" value="" type="mixed" name="fileOrUrl"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="376" type="resource" name="Open">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="377" value="" type="*" name="mode"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="378" type="string" name="Read">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="379" type="string" name="ReadLength">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="380" value="" type="*" name="length"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="381" type="string" name="ReadStream">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="382" type="string" name="ReadStreamLength">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="383" value="" type="*" name="length"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="384" type="void" name="Write">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="385" value="" type="*" name="data"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="386" type="void" name="WriteLength">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="387" value="" type="*" name="data"/>
+<UML:Parameter visibility="public" xmi.id="388" value="" type="*" name="length"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="389" type="resource" name="Close">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="390" name="View">
+<UML:Classifier.feature>
+<UML:Operation visibility="public" xmi.id="391" type="void" name="Action">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="392" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="393" name="ViewCommand">
+<UML:Classifier.feature>
+<UML:Attribute visibility="protected" xmi.id="394" value="" type="mixed" name="Receiver"/>
+<UML:Operation visibility="public" xmi.id="395" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="396" value="" type="View" name="Receiver"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="397" type="void" name="Execute">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="398" value="" type="Request" name="Request"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="399" name="XmlConfigDao">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="400" value="" type="mixed" name="DomDocument"/>
+<UML:Operation visibility="public" xmi.id="401" type="void" name="__construct">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="403" value="" type="DOMDocument" name="DomDocument"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="404" type="array" name="GetElementsByPath">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="405" value="" type="*" name="expression"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="406" type="void" name="SetElementByPath">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="407" value="" type="*" name="expression"/>
+<UML:Parameter visibility="public" xmi.id="408" value="" type="*" name="data"/>
+<UML:Parameter visibility="public" xmi.id="409" value="" type="*" name="fileName"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+<UML:Class visibility="public" xmi.id="410" name="XmlDaoFactory">
+<UML:Classifier.feature>
+<UML:Attribute visibility="private" xmi.id="411" value="" type="mixed" name="XmlDaoFactory" ownerScope="classifier"/>
+<UML:Operation visibility="public" xmi.id="412" type="XmlDaoFactory" name="GetInstance" ownerScope="classifier">
+<UML:BehavioralFeature.parameter>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="414" type="DomDocument" name="LoadXmlFile">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="415" value="" type="*" name="fileName"/>
+<UML:Parameter visibility="public" xmi.id="416" value="" type="*" name="schemaName"/>
+<UML:Parameter visibility="public" xmi.id="417" value="" type="*" name="whiteSpace"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+<UML:Operation visibility="public" xmi.id="418" type="XmlConfigDao" name="GetConfigDao">
+<UML:BehavioralFeature.parameter>
+<UML:Parameter visibility="public" xmi.id="419" value="" type="DOMDocument" name="DomDocument"/>
+</UML:BehavioralFeature.parameter>
+</UML:Operation>
+</UML:Classifier.feature>
+</UML:Class>
+</UML:Namespace.ownedElement>
+</UML:Package>
+<UML:Generalization child="134" visibility="public" xmi.id="421" parent="113" />
+<UML:Generalization child="169" visibility="public" xmi.id="422" parent="163" />
+<UML:Generalization child="184" visibility="public" xmi.id="423" parent="163" />
+<UML:Generalization child="215" visibility="public" xmi.id="424" parent="67" />
+<UML:Generalization child="225" visibility="public" xmi.id="425" parent="67" />
+<UML:Generalization child="232" visibility="public" xmi.id="426" parent="234" />
+<UML:Generalization child="223" visibility="public" xmi.id="427" parent="234" />
+<UML:Generalization child="272" visibility="public" xmi.id="428" parent="67" />
+<UML:Generalization child="279" visibility="public" xmi.id="429" parent="234" />
+<UML:Generalization child="295" visibility="public" xmi.id="430" parent="297" />
+<UML:Generalization child="299" visibility="public" xmi.id="431" parent="67" />
+<UML:Generalization child="308" visibility="public" xmi.id="432" parent="67" />
+<UML:Generalization child="363" visibility="public" xmi.id="433" parent="163" />
+<UML:Generalization child="393" visibility="public" xmi.id="434" parent="15" />
+<UML:Generalization child="399" visibility="public" xmi.id="435" parent="19" />
+<UML:Generalization child="410" visibility="public" xmi.id="436" parent="67" />
+</UML:Namespace.ownedElement>
+</UML:Model>
+</XMI.content>
+</XMI>

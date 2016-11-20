@@ -1,0 +1,72 @@
+.TH "XmlConfigDao" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+XmlConfigDao \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBConfigDao\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP (DomDocument $DomDocument)"
+.br
+.ti -1c
+.RI "\fBGetElementsByPath\fP ($expression)"
+.br
+.ti -1c
+.RI "\fBSetElementByPath\fP ($expression, $data, $fileName)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "XmlConfigDao::__construct (DomDocument $DomDocument)"
+function __construct
+.PP
+This method is executed when an object is instantiated from this class\&. Preprocessing can be done here before the object is put into service\&.
+.PP
+private 
+.SH "Member Function Documentation"
+.PP 
+.SS "XmlConfigDao::GetElementsByPath ( $expression)"
+function GetElementsByPath
+.PP
+This method queries an XML document for a specific node(s) matching some criteria and returns a collection of elements and their associated values\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIexpression\fP XPath expression 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+array XML element value list 
+.RE
+.PP
+
+.SS "XmlConfigDao::SetElementByPath ( $expression,  $data,  $fileName)"
+function SetElementByPath
+.PP
+This method queries an XML document for a specific node(s) matching some criteria and replaces the original text content with new text content\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIexpression\fP XPath expression 
+.br
+\fIdata\fP Data to write 
+.br
+\fIfileName\fP XML file to save 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

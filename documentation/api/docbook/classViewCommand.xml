@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classViewCommand">
+<title>ViewCommand class Reference</title>
+<para>Inheritance diagram for ViewCommand</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classViewCommand__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ViewCommand</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classViewCommand__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Receiver</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classViewCommand_1a4d3e56bc231b4d8cf47182aec7605acd">__construct</link> (
+<link linkend="classView">View</link> $Receiver)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classViewCommand_1a2e178df0a246b7d86eceb37bea204175">Execute</link> (
+<link linkend="classRequest">Request</link> $Request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classViewCommand_1a4d3e56bc231b4d8cf47182aec7605acd">
+                <title>ViewCommand::__construct (View $Receiver)</title> <emphasis></emphasis>
+                
+<para>function __construct</para>
+
+<para>This method is executed when an object is instantiated from this class. Preprocessing can be done here before the object is put into service.</para>
+
+<para>private </para>
+
+            </section>
+            <section xml:id="classViewCommand_1a2e178df0a246b7d86eceb37bea204175">
+                <title>ViewCommand::Execute (Request $Request)</title> <emphasis></emphasis>
+                
+<para>function Execute</para>
+
+<para>This method executes the action and returns the result to the invoker.</para>
+
+<para>public </para>
+
+            </section>
+</section>

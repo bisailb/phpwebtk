@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classSession">
+<title>Session class Reference</title>
+<para>Inheritance diagram for Session</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classSession__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Session</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classSession__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$XmlConfigDao</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$savePath</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$cookieLifetime</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$cookiePath</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$cookieDomain</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$cookieSecure</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$cacheLimiter</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$cacheExpire</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSession_1a36373ba15d6c8f932aeea02d7320d7c8">__construct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSession_1a0bf2334f105ec9df5acb319f4e46d820">GetCacheExpire</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSession_1a4b28348761b53b9c40c3bfd2457e2e97">GetCacheLimiter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSession_1ad3392ed08dab43ba4c08e27c22c09465">GetCookieParameters</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSession_1a741432090c6c7904c73c0c9a07cf5b6d">GetId</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSession_1a17bb1ab59d2391260a4feed4871609b0">GetName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSession_1a49ba9b0cbbf61b794d51141fad0e6f3c">GetSavePath</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSession_1a31625672903de0107f321be72fb29ad8">OpenSession</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSession_1a93accdb2a7faeb6d29bd331d9479b846">CloseSession</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classSession_1a36373ba15d6c8f932aeea02d7320d7c8">
+                <title>Session::__construct ()</title> <emphasis></emphasis>
+                
+<para>function __construct</para>
+
+<para>This method is executed when an object is instantiated from this class. Preprocessing can be done here before the object is put into service.</para>
+
+<para>private </para>
+
+            </section>
+            <section xml:id="classSession_1a0bf2334f105ec9df5acb319f4e46d820">
+                <title>Session::GetCacheExpire ()</title> <emphasis></emphasis>
+                
+<para>function GetCacheExpire</para>
+
+<para>This method retrieves the current cache expire setting.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>integer Current cache expire </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classSession_1a4b28348761b53b9c40c3bfd2457e2e97">
+                <title>Session::GetCacheLimiter ()</title> <emphasis></emphasis>
+                
+<para>function GetCacheLimiter</para>
+
+<para>This method retrieves the current cache limiter setting.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>string Current cache limiter </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classSession_1ad3392ed08dab43ba4c08e27c22c09465">
+                <title>Session::GetCookieParameters ()</title> <emphasis></emphasis>
+                
+<para>function GetCookieParameters</para>
+
+<para>This method retrieves the session cookie parameters.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>array <link linkend="classSession">Session</link> cookie parameters </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classSession_1a741432090c6c7904c73c0c9a07cf5b6d">
+                <title>Session::GetId ()</title> <emphasis></emphasis>
+                
+<para>function getId</para>
+
+<para>This method retrieves the current session id.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>string Current session id </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classSession_1a17bb1ab59d2391260a4feed4871609b0">
+                <title>Session::GetName ()</title> <emphasis></emphasis>
+                
+<para>function GetName</para>
+
+<para>This method retrieves the current session name.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>string Current session name </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classSession_1a49ba9b0cbbf61b794d51141fad0e6f3c">
+                <title>Session::GetSavePath ()</title> <emphasis></emphasis>
+                
+<para>function GetSavePath</para>
+
+<para>This method retrieves the current session save path.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>string Current session save path </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classSession_1a31625672903de0107f321be72fb29ad8">
+                <title>Session::OpenSession ()</title> <emphasis></emphasis>
+                
+<para>function OpenSession</para>
+
+<para>This method sets the current session save path, the session name, the session cookie parameters, the current cache limiter, the current cache expire and starts a session.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classSession_1a93accdb2a7faeb6d29bd331d9479b846">
+                <title>Session::CloseSession ()</title> <emphasis></emphasis>
+                
+<para>function <link linkend="classSession_1a93accdb2a7faeb6d29bd331d9479b846">CloseSession()</link> {</para>
+
+<para>This method starts a session if it does not exist, destroys all data registered to the session, and expires the session cookie.</para>
+
+<para>public </para>
+
+            </section>
+</section>

@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classRequestBuilder">
+<title>RequestBuilder class Reference</title>
+<para>Inheritance diagram for RequestBuilder</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classRequestBuilder__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for RequestBuilder</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classRequestBuilder__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a27360ce46212d5b756ddbbb9210e6984">BuildHttpAccept</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1ac2f39b5dd86860905d695f3471a9e122">BuildHttpAcceptCharset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a4a8e35dedd25b0aa46dc75ac53498edc">BuildHttpAcceptEncoding</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a5ac7fa5ea34d3db2043b762d9082155d">BuildHttpAcceptLanguage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a172c0a1e35ffa1ef87d073ee3d467ad7">BuildHttpConnection</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a0520cbb8c655e6f4416233323a0a3089">BuildHttpGet</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a5606b7782cfb56693c971b67643ba5e5">BuildHttpHost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a8df0986f7e582101d00b3b59a4ef2394">BuildHttpPost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1afb6a6891caaf41f5d1e4aebed73ba68d">BuildHttpReferer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a54256cee80d4d487a82c02f3ff76b2f8">BuildHttpUserAgent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a9d0dfb860fb64cfe034163e6bdba61b0">BuildQueryString</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a88ead40ac70e23ef01988d4bb28f2f03">BuildRemoteAddress</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a2fac03a47b25dff00962530665c0f49b">BuildRemoteHost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1af6745aa9ac66a5e7e5de724ea51f461c">BuildRemotePort</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1aa1b2252eafa2b6fc110ef559b7b2401d">BuildRemoteProxyAddr</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a2aee3bf9f5662dafa2076bd04a3e13ff">BuildRemoteProxyHost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a2eb9256ad719c5ec451f26cf35476749">BuildRequestMethod</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a248539a7a2e2d9e050bc5feed7aed4f8">BuildRequestUri</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1a0322c59535dde0cdf5a6cda106948c84">BuildServerProtocol</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classRequestBuilder_1ad17d8e304a21258567cbb972b6edfb35">GetRequest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classRequestBuilder_1a27360ce46212d5b756ddbbb9210e6984">
+                <title>RequestBuilder::BuildHttpAccept ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1ac2f39b5dd86860905d695f3471a9e122">
+                <title>RequestBuilder::BuildHttpAcceptCharset ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a4a8e35dedd25b0aa46dc75ac53498edc">
+                <title>RequestBuilder::BuildHttpAcceptEncoding ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a5ac7fa5ea34d3db2043b762d9082155d">
+                <title>RequestBuilder::BuildHttpAcceptLanguage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a172c0a1e35ffa1ef87d073ee3d467ad7">
+                <title>RequestBuilder::BuildHttpConnection ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a0520cbb8c655e6f4416233323a0a3089">
+                <title>RequestBuilder::BuildHttpGet ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a5606b7782cfb56693c971b67643ba5e5">
+                <title>RequestBuilder::BuildHttpHost ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a8df0986f7e582101d00b3b59a4ef2394">
+                <title>RequestBuilder::BuildHttpPost ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1afb6a6891caaf41f5d1e4aebed73ba68d">
+                <title>RequestBuilder::BuildHttpReferer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a54256cee80d4d487a82c02f3ff76b2f8">
+                <title>RequestBuilder::BuildHttpUserAgent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a9d0dfb860fb64cfe034163e6bdba61b0">
+                <title>RequestBuilder::BuildQueryString ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a88ead40ac70e23ef01988d4bb28f2f03">
+                <title>RequestBuilder::BuildRemoteAddress ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a2fac03a47b25dff00962530665c0f49b">
+                <title>RequestBuilder::BuildRemoteHost ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1af6745aa9ac66a5e7e5de724ea51f461c">
+                <title>RequestBuilder::BuildRemotePort ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1aa1b2252eafa2b6fc110ef559b7b2401d">
+                <title>RequestBuilder::BuildRemoteProxyAddr ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a2aee3bf9f5662dafa2076bd04a3e13ff">
+                <title>RequestBuilder::BuildRemoteProxyHost ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a2eb9256ad719c5ec451f26cf35476749">
+                <title>RequestBuilder::BuildRequestMethod ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a248539a7a2e2d9e050bc5feed7aed4f8">
+                <title>RequestBuilder::BuildRequestUri ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1a0322c59535dde0cdf5a6cda106948c84">
+                <title>RequestBuilder::BuildServerProtocol ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classRequestBuilder_1ad17d8e304a21258567cbb972b6edfb35">
+                <title>RequestBuilder::GetRequest ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

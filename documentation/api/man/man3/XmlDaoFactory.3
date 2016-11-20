@@ -1,0 +1,86 @@
+.TH "XmlDaoFactory" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+XmlDaoFactory \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBDaoFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLoadXmlFile\fP ($fileName, $schemaName, $whiteSpace=FALSE)"
+.br
+.ti -1c
+.RI "\fBGetConfigDao\fP (DomDocument $DomDocument)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGetInstance\fP ()"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "XmlDaoFactory::GetConfigDao (DomDocument $DomDocument)"
+function GetConfigDao
+.PP
+The GetConfigDao method creates a new object of class \fBXmlConfigDao\fP\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDomDocument\fP DomDocument object 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBXmlConfigDao\fP object instance 
+.RE
+.PP
+
+.SS "static XmlDaoFactory::GetInstance ()\fC [static]\fP"
+function GetInstance
+.PP
+This method instantiates a new object from this class; more specifically, it's a singleton instance\&.
+.PP
+public
+.PP
+\fBReturns:\fP
+.RS 4
+\fBXmlDaoFactory\fP object instance 
+.RE
+.PP
+
+.SS "XmlDaoFactory::LoadXmlFile ( $fileName,  $schemaName,  $whiteSpace = \fCFALSE\fP)"
+function LoadXmlFile
+.PP
+This method loads XML from a file, validates its associated XML Schema and optionally preserves white space\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfileName\fP XML file 
+.br
+\fIschemaName\fP XML Schema file 
+.br
+\fIwhiteSpace\fP Preserve white space 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+DomDocument object instance 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

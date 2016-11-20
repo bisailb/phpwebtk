@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classHash">
+<title>Hash class Reference</title>
+<para>Inheritance diagram for Hash</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classHash__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Hash</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classHash__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $Hash</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHash_1aa6ee6482a5a64b40589b372e4ef98ebe">GetHashInfo</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHash_1a61faba1a380fac78d651129b4c85bf08">GetBlockSize</link> (
+ $hashId)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHash_1ad60630190ecbe45e844503c633ec8d03">GetSalt</link> (
+ $bytes,  $source)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHash_1a634dd0415f978a0fe7636df31a155162">CompareCiphertextData</link> (
+ $ciphertext,  $genCiphertext)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classHash_1aa6ee6482a5a64b40589b372e4ef98ebe">
+                <title>Hash::GetHashInfo ()</title> <emphasis></emphasis>
+                
+<para>function GetHashInfo</para>
+
+<para>This method displays the hash id, the algorithm and the block size for each hash algorithm supported by the mhash library.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para>string <link linkend="classHash">Hash</link> identifier, algorithm and output size </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classHash_1a61faba1a380fac78d651129b4c85bf08">
+                <title>Hash::GetBlockSize ($hashId)</title> <emphasis></emphasis>
+                
+<para>function GetBlockSize</para>
+
+<para>This method retrieves the block size of the specified hash.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>hashId</entry>
+                                <entry>
+<para><link linkend="classHash">Hash</link> identifier </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>mixed Block size|FALSE </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classHash_1ad60630190ecbe45e844503c633ec8d03">
+                <title>Hash::GetSalt ($bytes, $source)</title> <emphasis></emphasis>
+                
+<para>function GetSalt</para>
+
+<para>This method retrieves random bits from a Pseudo-Random Number Generator (PRNG).</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>bytes</entry>
+                                <entry>
+<para>Size of salt in bytes </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>source</entry>
+                                <entry>
+<para>Random source of entropy </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>string Binary encoded salt </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classHash_1a634dd0415f978a0fe7636df31a155162">
+                <title>Hash::CompareCiphertextData ($ciphertext, $genCiphertext)</title> <emphasis></emphasis>
+                
+<para>function CompareCiphertextData</para>
+
+<para>This method compares the original ciphertext to the generated ciphertext.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ciphertext</entry>
+                                <entry>
+<para>Original ciphertext </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>genCiphertext</entry>
+                                <entry>
+<para>Generated ciphertext </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>boolean TRUE|FALSE </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>PHP Web Toolkit 1.0.4 Alpha (phpwebtk)</title>
+    </info>
+    <chapter>
+        <title>Namespace Documentation</title>
+        <xi:include href="namespacephpwebtk.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Class Documentation</title>
+        <xi:include href="classClient.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classCommand.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classConfigDao.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classController.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classConvert.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classCrypt.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classDaoFactory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classDigest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classException.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classHash.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classHmac.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classHttpRequestBuilder.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classHttpRequestHandler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classInvoker.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classKsesRequestHandler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classMysqlDaoFactory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classMysqliDaoFactory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classMysqliSampleDao.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classMysqlSampleDao.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classMysqltDaoFactory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classMysqltSampleDao.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classPException.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classPostgres7DaoFactory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classPostgres8DaoFactory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classPrng.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classRequest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classRequestBuilder.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classRequestDirector.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classRequestHandler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classSampleDao.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classSampleView.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classSession.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classSlashesRequestHandler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classStreamIo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classView.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classViewCommand.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classXmlConfigDao.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classXmlDaoFactory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>File Documentation</title>
+        <xi:include href="client_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="command_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="configdao_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="constants_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="controller_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="convert_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="crypt_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="daofactory_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="digest_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="hash_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="hmac_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="httprequestbuilder_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="httprequesthandler_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="index_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="invoker_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="ksesrequesthandler_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="mysqldaofactory_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="mysqlidaofactory_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="mysqlisampledao_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="mysqlsampledao_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="mysqltdaofactory_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="mysqltsampledao_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="pexception_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="postgres7daofactory_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="postgres8daofactory_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="prng_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="request_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="requestbuilder_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="requestdirector_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="requesthandler_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="sampledao_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="sampleview_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="session_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="slashesrequesthandler_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="streamio_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="controllertest_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="createkeys_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="crypttest_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="digesttest_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="encryptionkey_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="hmackey_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="hmactest_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="mysqlsample_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="prngtest_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="sessiontest_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="view_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="viewcommand_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="xmlconfigdao_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="xmldaofactory_8class_8php.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Directory Documentation</title>
+        <xi:include href="dir_c755761b6b46fbbb2f4b40649cfdfd0a.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_2a2b3cc892db4f0e8816f6fd2eaaab76.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

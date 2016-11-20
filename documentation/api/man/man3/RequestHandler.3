@@ -1,0 +1,52 @@
+.TH "RequestHandler" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RequestHandler \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBHttpRequestHandler\fP, \fBKsesRequestHandler\fP, and \fBSlashesRequestHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHandleRequest\fP (\fBRequest\fP $\fBRequest\fP)"
+.br
+.ti -1c
+.RI "\fBSetSuccessor\fP (\fBRequestHandler\fP $Successor)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB$Successor\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "RequestHandler::HandleRequest (\fBRequest\fP $Request)\fC [abstract]\fP"
+
+.SS "RequestHandler::SetSuccessor (\fBRequestHandler\fP $Successor)"
+function SetSuccessor
+.PP
+This method sets the Successor\&.
+.PP
+public 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI$Successor\fP object of type Handler 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "RequestHandler::$Successor\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

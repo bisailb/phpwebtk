@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classSampleDao">
+<title>SampleDao class Reference</title>
+<para>Inheritance diagram for SampleDao</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classSampleDao__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for SampleDao</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classSampleDao__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleDao_1a50f235f3608e85f0bc55fc0492aa198f">InsertSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleDao_1ac25552b0e72881ed6a34d1f7992ddf7f">DeleteSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleDao_1a9fe306be50d41cd6ddbd81bcd68d37ce">FindSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleDao_1a809ce101f80256f26987e9ca4c9fd082">UpdateSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleDao_1a80b60a87da8d3bdffa8691428fc46e92">SelectSampleRS</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleDao_1a82682b76ccafd8cb0359585ddf7477ca">SelectSampleTO</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleDao_1ad75342d1fa1d42214c00d3efa54986c8">GetData</link> (
+ $RecordSet)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classSampleDao_1a39c9c376dca0061e8af130be225bfc37">GetDataTO</link> (
+ $RecordSet)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classSampleDao_1a50f235f3608e85f0bc55fc0492aa198f">
+                <title>SampleDao::InsertSample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classSampleDao_1ac25552b0e72881ed6a34d1f7992ddf7f">
+                <title>SampleDao::DeleteSample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classSampleDao_1a9fe306be50d41cd6ddbd81bcd68d37ce">
+                <title>SampleDao::FindSample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classSampleDao_1a809ce101f80256f26987e9ca4c9fd082">
+                <title>SampleDao::UpdateSample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classSampleDao_1a80b60a87da8d3bdffa8691428fc46e92">
+                <title>SampleDao::SelectSampleRS ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classSampleDao_1a82682b76ccafd8cb0359585ddf7477ca">
+                <title>SampleDao::SelectSampleTO ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classSampleDao_1ad75342d1fa1d42214c00d3efa54986c8">
+                <title>SampleDao::GetData ($RecordSet)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classSampleDao_1a39c9c376dca0061e8af130be225bfc37">
+                <title>SampleDao::GetDataTO ($RecordSet)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

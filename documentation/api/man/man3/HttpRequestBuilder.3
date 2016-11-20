@@ -1,0 +1,238 @@
+.TH "HttpRequestBuilder" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HttpRequestBuilder \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBRequestBuilder\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpAccept\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpAcceptCharset\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpAcceptEncoding\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpAcceptLanguage\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpConnection\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpGet\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpHost\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpPost\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpReferer\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildHttpUserAgent\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildQueryString\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildRemoteAddress\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildRemoteHost\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildRemotePort\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildRemoteProxyAddr\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildRemoteProxyHost\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildRequestMethod\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildRequestUri\fP ()"
+.br
+.ti -1c
+.RI "\fBBuildServerProtocol\fP ()"
+.br
+.ti -1c
+.RI "\fBGetRequest\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGetInstance\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "HttpRequestBuilder::__construct ()"
+function __construct
+.PP
+This method is executed when an object is instantiated from this class\&. Preprocessing can be done here before the object is put into service\&.
+.PP
+public 
+.SH "Member Function Documentation"
+.PP 
+.SS "HttpRequestBuilder::BuildHttpAccept ()"
+function BuildHttpAccept
+.PP
+This method sets the contents of the Accept: header from the current request, if there is one\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildHttpAcceptCharset ()"
+function BuildHttpAcceptCharset
+.PP
+This method sets the contents of the Accept-Charset: header from the current request, if there is one\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildHttpAcceptEncoding ()"
+function BuildHttpAcceptEncoding
+.PP
+This method sets the contents of the Accept-Encoding: header from the current request, if there is one\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildHttpAcceptLanguage ()"
+function BuildHttpAcceptLanguage
+.PP
+This method sets the contents of the Accept-Language: header from the current request, if there is one\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildHttpConnection ()"
+function BuildHttpConnection
+.PP
+This method sets the contents of the Connection: header from the current request, if there is one\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildHttpGet ()"
+function BuildHttpGet
+.PP
+This method sets variables provided to the script via HTTP GET\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildHttpHost ()"
+function BuildHttpHost
+.PP
+This method sets the contents of the Host: header from the current request, if there is one\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildHttpPost ()"
+function BuildHttpPost
+.PP
+This method sets variables provided to the script via HTTP POST\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildHttpReferer ()"
+function BuildHttpReferer
+.PP
+This method sets the address of the page (if any) which referred the user agent to the current page\&. This is set by the user agent\&. Not all user agents will set this, and some provide the ability to modify HTTP_REFERER as a feature\&. In short, it cannot really be trusted\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildHttpUserAgent ()"
+function BuildHttpUserAgent
+.PP
+This method sets the contents of the User-Agent: header from the current request, if there is one\&. This is a string denoting the user agent being which is accessing the page\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildQueryString ()"
+function BuildQueryString
+.PP
+This method sets the query string, if any, via which the page was accessed\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildRemoteAddress ()"
+function BuildRemoteAddress
+.PP
+This method sets the IP address from which the user is viewing the current page\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildRemoteHost ()"
+function BuildRemoteHost
+.PP
+This method sets the Host name from which the user is viewing the current page\&. The reverse dns lookup is based off the REMOTE_ADDR of the user\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildRemotePort ()"
+function BuildRemotePort
+.PP
+This method sets the port being used on the user's machine to communicate with the web server\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildRemoteProxyAddr ()"
+function BuildRemoteProxyAddr
+.PP
+This method sets the proxy IP address from which the user is being forwarded\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildRemoteProxyHost ()"
+function BuildRemoteProxyHost
+.PP
+This method sets the Host name from which the user is being forwarded\&. The reverse dns lookup is based off the REMOTE_PROXY_ADDR of the user\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildRequestMethod ()"
+function BuildRequestMethod
+.PP
+This method sets the request method that was used to access the page\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildRequestUri ()"
+function BuildRequestUri
+.PP
+This method retreives the URI which was given in order to access this page\&.
+.PP
+public 
+.SS "HttpRequestBuilder::BuildServerProtocol ()"
+function BuildServerProtocol
+.PP
+This method sets the name and revision of the information protocol via which the page was requested\&.
+.PP
+public 
+.SS "HttpRequestBuilder::GetInstance ()\fC [static]\fP"
+function GetInstance
+.PP
+This method instantiates a new object from this class; more specifically, it's a singleton instance\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBHttpRequestBuilder\fP object instance 
+.RE
+.PP
+
+.SS "HttpRequestBuilder::GetRequest ()"
+function GetRequest
+.PP
+This method returns the \fBRequest\fP object to the calling method\&.
+.PP
+public 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBRequest\fP object instance 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.

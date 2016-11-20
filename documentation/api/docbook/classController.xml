@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classController">
+<title>Controller class Reference</title>
+<para>Inheritance diagram for Controller</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classController__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Controller</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classController__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $Controller</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classController_1aee7c20f9ae3bb00443f9ac7f91931c93">ProcessRequest</link> (
+<link linkend="classRequest">Request</link> $Request)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classController_1a86a46ebe409bdaa2a16d0ea40b0c1447">Dispatch</link> (
+<link linkend="classRequest">Request</link> $Request,  $viewName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classController_1aee7c20f9ae3bb00443f9ac7f91931c93">
+                <title>Controller::ProcessRequest (Request $Request)</title> <emphasis></emphasis>
+                
+<para>function ProcessRequest</para>
+
+<para>This method initiates a session to preserve specific information across subsequent requests; adds or strips slashes from the HTTP GET or HTTP POST information; executes customized operations; and transfers the modified <link linkend="classRequest">Request</link> object to the Dispatch method along with the name of the view to present to the end user.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry><link linkend="classRequest">Request</link></entry>
+                                <entry>
+<para><link linkend="classRequest">Request</link> object </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classController_1a86a46ebe409bdaa2a16d0ea40b0c1447">
+                <title>Controller::Dispatch (Request $Request, $viewName)</title> <emphasis></emphasis>
+                
+<para>function Dispatch</para>
+
+<para>This method is responsible for view management and navigation. The dispatcher provides a dynamic dispatching mechanism to manage the choice of the next view to present to the end user.</para>
+
+<para>private 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry><link linkend="classRequest">Request</link></entry>
+                                <entry>
+<para><link linkend="classRequest">Request</link> object </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>viewName</entry>
+                                <entry>
+<para><link linkend="classView">View</link> name for the class-based view </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

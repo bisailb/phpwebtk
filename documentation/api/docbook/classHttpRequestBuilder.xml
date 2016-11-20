@@ -1,0 +1,501 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classHttpRequestBuilder">
+<title>HttpRequestBuilder class Reference</title>
+<para>Inheritance diagram for HttpRequestBuilder</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classHttpRequestBuilder__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for HttpRequestBuilder</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classHttpRequestBuilder__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $HttpRequestBuilder</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Request</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$ipAddress</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$ipAddresses</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$proxyAddress</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1ac949afea864b1eba9aa41982173df503">__construct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1af9a610bb2ba458409d0d08c4ceb8762b">BuildHttpAccept</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1aeee59deb652f317d1443048aa0a6b9dd">BuildHttpAcceptCharset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1ab6bc4b314ddf2b9d6d3b13eaaa567243">BuildHttpAcceptEncoding</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1aefee6da3427daa663715c3ad37c789a9">BuildHttpAcceptLanguage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a0f64b68ab82ec26741fa78b76474bcbe">BuildHttpConnection</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a5141ebb63891c81df6bde2ffb3a16290">BuildHttpGet</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a5979391cd13f27b9993b171b8ae16039">BuildHttpHost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a150710872d64a07fdf4703961f11df68">BuildHttpPost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1aacbd81c10b669dfa4e89dbaad807e9bb">BuildHttpReferer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a676800521c4f69c944c823a26a4cd17c">BuildHttpUserAgent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a99c039afb368a94dd176179e49b23dd8">BuildQueryString</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1addef3452e6caa8e3e5e970b6a8d61b2f">BuildRemoteAddress</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a1046a89182ea78f07bab0078c6fb394a">BuildRemoteHost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a05608f6510a537fd22caf366c202c7d4">BuildRemotePort</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a0f6f1eb19598428ab6d9df54aa9f9811">BuildRemoteProxyAddr</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a2354b1d5d645de145012100478fb6923">BuildRemoteProxyHost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a0937a689ef3bf25c665f86a9ba2a66a9">BuildRequestMethod</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1ab69bad1e86733666982fd0d312aba724">BuildRequestUri</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a18c39317ffc590f94b7d6ac2249ac49e">BuildServerProtocol</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a1a91da5be9aed5e916dad85f627e0127">GetRequest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a520ea882c53ac37e1b4250c69d9d8207">GetInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classHttpRequestBuilder_1a45f78b774e56f1f60c1aac39dfd26877">GetHttpClientIPAddress</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classHttpRequestBuilder_1ac949afea864b1eba9aa41982173df503">
+                <title>HttpRequestBuilder::__construct ()</title> <emphasis></emphasis>
+                
+<para>function __construct</para>
+
+<para>This method is executed when an object is instantiated from this class. Preprocessing can be done here before the object is put into service.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1af9a610bb2ba458409d0d08c4ceb8762b">
+                <title>HttpRequestBuilder::BuildHttpAccept ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpAccept</para>
+
+<para>This method sets the contents of the Accept: header from the current request, if there is one.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1aeee59deb652f317d1443048aa0a6b9dd">
+                <title>HttpRequestBuilder::BuildHttpAcceptCharset ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpAcceptCharset</para>
+
+<para>This method sets the contents of the Accept-Charset: header from the current request, if there is one.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1ab6bc4b314ddf2b9d6d3b13eaaa567243">
+                <title>HttpRequestBuilder::BuildHttpAcceptEncoding ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpAcceptEncoding</para>
+
+<para>This method sets the contents of the Accept-Encoding: header from the current request, if there is one.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1aefee6da3427daa663715c3ad37c789a9">
+                <title>HttpRequestBuilder::BuildHttpAcceptLanguage ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpAcceptLanguage</para>
+
+<para>This method sets the contents of the Accept-Language: header from the current request, if there is one.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a0f64b68ab82ec26741fa78b76474bcbe">
+                <title>HttpRequestBuilder::BuildHttpConnection ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpConnection</para>
+
+<para>This method sets the contents of the Connection: header from the current request, if there is one.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a5141ebb63891c81df6bde2ffb3a16290">
+                <title>HttpRequestBuilder::BuildHttpGet ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpGet</para>
+
+<para>This method sets variables provided to the script via HTTP GET.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a5979391cd13f27b9993b171b8ae16039">
+                <title>HttpRequestBuilder::BuildHttpHost ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpHost</para>
+
+<para>This method sets the contents of the Host: header from the current request, if there is one.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a150710872d64a07fdf4703961f11df68">
+                <title>HttpRequestBuilder::BuildHttpPost ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpPost</para>
+
+<para>This method sets variables provided to the script via HTTP POST.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1aacbd81c10b669dfa4e89dbaad807e9bb">
+                <title>HttpRequestBuilder::BuildHttpReferer ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpReferer</para>
+
+<para>This method sets the address of the page (if any) which referred the user agent to the current page. This is set by the user agent. Not all user agents will set this, and some provide the ability to modify HTTP_REFERER as a feature. In short, it cannot really be trusted.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a676800521c4f69c944c823a26a4cd17c">
+                <title>HttpRequestBuilder::BuildHttpUserAgent ()</title> <emphasis></emphasis>
+                
+<para>function BuildHttpUserAgent</para>
+
+<para>This method sets the contents of the User-Agent: header from the current request, if there is one. This is a string denoting the user agent being which is accessing the page.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a99c039afb368a94dd176179e49b23dd8">
+                <title>HttpRequestBuilder::BuildQueryString ()</title> <emphasis></emphasis>
+                
+<para>function BuildQueryString</para>
+
+<para>This method sets the query string, if any, via which the page was accessed.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1addef3452e6caa8e3e5e970b6a8d61b2f">
+                <title>HttpRequestBuilder::BuildRemoteAddress ()</title> <emphasis></emphasis>
+                
+<para>function BuildRemoteAddress</para>
+
+<para>This method sets the IP address from which the user is viewing the current page.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a1046a89182ea78f07bab0078c6fb394a">
+                <title>HttpRequestBuilder::BuildRemoteHost ()</title> <emphasis></emphasis>
+                
+<para>function BuildRemoteHost</para>
+
+<para>This method sets the Host name from which the user is viewing the current page. The reverse dns lookup is based off the REMOTE_ADDR of the user.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a05608f6510a537fd22caf366c202c7d4">
+                <title>HttpRequestBuilder::BuildRemotePort ()</title> <emphasis></emphasis>
+                
+<para>function BuildRemotePort</para>
+
+<para>This method sets the port being used on the user&apos;s machine to communicate with the web server.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a0f6f1eb19598428ab6d9df54aa9f9811">
+                <title>HttpRequestBuilder::BuildRemoteProxyAddr ()</title> <emphasis></emphasis>
+                
+<para>function BuildRemoteProxyAddr</para>
+
+<para>This method sets the proxy IP address from which the user is being forwarded.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a2354b1d5d645de145012100478fb6923">
+                <title>HttpRequestBuilder::BuildRemoteProxyHost ()</title> <emphasis></emphasis>
+                
+<para>function BuildRemoteProxyHost</para>
+
+<para>This method sets the Host name from which the user is being forwarded. The reverse dns lookup is based off the REMOTE_PROXY_ADDR of the user.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a0937a689ef3bf25c665f86a9ba2a66a9">
+                <title>HttpRequestBuilder::BuildRequestMethod ()</title> <emphasis></emphasis>
+                
+<para>function BuildRequestMethod</para>
+
+<para>This method sets the request method that was used to access the page.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1ab69bad1e86733666982fd0d312aba724">
+                <title>HttpRequestBuilder::BuildRequestUri ()</title> <emphasis></emphasis>
+                
+<para>function BuildRequestUri</para>
+
+<para>This method retreives the URI which was given in order to access this page.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a18c39317ffc590f94b7d6ac2249ac49e">
+                <title>HttpRequestBuilder::BuildServerProtocol ()</title> <emphasis></emphasis>
+                
+<para>function BuildServerProtocol</para>
+
+<para>This method sets the name and revision of the information protocol via which the page was requested.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a1a91da5be9aed5e916dad85f627e0127">
+                <title>HttpRequestBuilder::GetRequest ()</title> <emphasis></emphasis>
+                
+<para>function GetRequest</para>
+
+<para>This method returns the <link linkend="classRequest">Request</link> object to the calling method.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para><link linkend="classRequest">Request</link> object instance </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a520ea882c53ac37e1b4250c69d9d8207">
+                <title>HttpRequestBuilder::GetInstance ()</title> <emphasis></emphasis>
+                
+<para>function GetInstance</para>
+
+<para>This method instantiates a new object from this class; more specifically, it&apos;s a singleton instance.</para>
+
+<para>public <formalpara><title>Returns: </title>
+
+<para><link linkend="classHttpRequestBuilder">HttpRequestBuilder</link> object instance </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classHttpRequestBuilder_1a45f78b774e56f1f60c1aac39dfd26877">
+                <title>HttpRequestBuilder::GetHttpClientIPAddress ()</title> <emphasis></emphasis>
+                
+<para>function GetHttpClientIPAddress</para>
+
+<para>This method sets the end user&apos;s IP address and proxy address if there is one.</para>
+
+<para>private </para>
+
+            </section>
+</section>

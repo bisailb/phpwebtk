@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classCrypt">
+<title>Crypt class Reference</title>
+<para>Inheritance diagram for Crypt</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classCrypt__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Crypt</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classCrypt__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static $Crypt</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Hash</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$XmlConfigDao</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$Convert</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$encryptionDescriptor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$initializationVector</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$randomDevice</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$blockAlgorithm</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$blockAlgorithmMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$encryptionKey</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$hmacAlgorithm</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$hmacAlgorithmBlockSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1a7a5f65ea9d2119a0eae77d80e7c528bb">__construct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1a142252e4241db40840dc02067eb9639a">SetEncryptionKey</link> (
+ $plaintext)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1a786aa81aacb2a6861e403c069bbe6836">Encrypt</link> (
+ $plaintext)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1a86f40e80fb39572cab5f493f8bb1dcee">Decrypt</link> (
+ $ciphertext)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1a460e818cedfd0544a70b1b9b6d2d2630">GetIvSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1aa144142ba48f898ef8acb54ba1d65987">GetKeySize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1abda2beb4116a21b3ff0399f60e26a949">GetBlockSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1a165902d18448ca4d25083598456d9e17">OpenModule</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1a6647c87d07804ff5b1d681f0d64cb7a9">GetRandomIv</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1af2c8a0501c20dd8a4fe6c57e48e0547b">SetRandomIv</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCrypt_1a173ea43d4020e2cd090ded81605f0d83">CloseModule</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classCrypt_1a7a5f65ea9d2119a0eae77d80e7c528bb">
+                <title>Crypt::__construct ()</title> <emphasis></emphasis>
+                
+<para>function __construct</para>
+
+<para>This method is executed when an object is instantiated from this class. Preprocessing can be done here before the object is put into service.</para>
+
+<para>public </para>
+
+            </section>
+            <section xml:id="classCrypt_1a142252e4241db40840dc02067eb9639a">
+                <title>Crypt::SetEncryptionKey ($plaintext)</title> <emphasis></emphasis>
+                
+<para>function SetEncryptionKey</para>
+
+<para>This method creates a encryption key according to the maximum supported key size of the opened mode and stores it in the XML configuration file.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>plaintext</entry>
+                                <entry>
+<para>Plaintext password </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>string Encryption key </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classCrypt_1a786aa81aacb2a6861e403c069bbe6836">
+                <title>Crypt::Encrypt ($plaintext)</title> <emphasis></emphasis>
+                
+<para>function Encrypt</para>
+
+<para>This method initializes all buffers needed for encryption, encrypts data and deinitializes an encryption module.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>plaintext</entry>
+                                <entry>
+<para>Plaintext </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>string Hexadecimal encoded ciphertext </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classCrypt_1a86f40e80fb39572cab5f493f8bb1dcee">
+                <title>Crypt::Decrypt ($ciphertext)</title> <emphasis></emphasis>
+                
+<para>function Decrypt</para>
+
+<para>This method initializes all buffers needed for decryption, decrypts data and deinitializes a decryption module.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ciphertext</entry>
+                                <entry>
+<para>Ciphertext </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>string Stripped plaintext </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classCrypt_1a460e818cedfd0544a70b1b9b6d2d2630">
+                <title>Crypt::GetIvSize ()</title> <emphasis></emphasis>
+                
+<para>function GetIvSize</para>
+
+<para>This method retrieves the size of the Initialization Vector (IV) belonging to a specific cipher/mode combination.</para>
+
+<para>private <formalpara><title>Returns: </title>
+
+<para>integer Size of IV </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classCrypt_1aa144142ba48f898ef8acb54ba1d65987">
+                <title>Crypt::GetKeySize ()</title> <emphasis></emphasis>
+                
+<para>function GetKeySize</para>
+
+<para>This method retrieves the maximum supported key size of the opened mode.</para>
+
+<para>private <formalpara><title>Returns: </title>
+
+<para>integer Key size </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classCrypt_1abda2beb4116a21b3ff0399f60e26a949">
+                <title>Crypt::GetBlockSize ()</title> <emphasis></emphasis>
+                
+<para>function GetBlockSize</para>
+
+<para>This method retrieves the blocksize of the opened algorithm.</para>
+
+<para>private <formalpara><title>Returns: </title>
+
+<para>integer Block size </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classCrypt_1a165902d18448ca4d25083598456d9e17">
+                <title>Crypt::OpenModule ()</title> <emphasis></emphasis>
+                
+<para>function OpenModule</para>
+
+<para>This method opens the module of the algorithm and the mode to be used.</para>
+
+<para>private <formalpara><title>Returns: </title>
+
+<para>mixed Encryption descriptor|FALSE </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classCrypt_1a6647c87d07804ff5b1d681f0d64cb7a9">
+                <title>Crypt::GetRandomIv ()</title> <emphasis></emphasis>
+                
+<para>function GetRandomIv</para>
+
+<para>This method retrieves the Initialization Vector (IV) from a registered session.</para>
+
+<para>private <formalpara><title>Returns: </title>
+
+<para>mixed Initialization Vector (IV)|FALSE </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classCrypt_1af2c8a0501c20dd8a4fe6c57e48e0547b">
+                <title>Crypt::SetRandomIv ()</title> <emphasis></emphasis>
+                
+<para>function SetRandomIv</para>
+
+<para>This method creates the Initialization Vector (IV) from a random source and stores it in a registered session.</para>
+
+<para>private <formalpara><title>Returns: </title>
+
+<para>mixed Initialization Vector (IV)|FALSE </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classCrypt_1a173ea43d4020e2cd090ded81605f0d83">
+                <title>Crypt::CloseModule ()</title> <emphasis></emphasis>
+                
+<para>function CloseModule</para>
+
+<para>This method closes the mcrypt module.</para>
+
+<para>public </para>
+
+            </section>
+</section>

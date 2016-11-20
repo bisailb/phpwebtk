@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classXmlConfigDao">
+<title>XmlConfigDao class Reference</title>
+<para>Inheritance diagram for XmlConfigDao</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classXmlConfigDao__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for XmlConfigDao</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classXmlConfigDao__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>$DomDocument</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classXmlConfigDao_1af39ad5ee18454986ef1e08c9000fddf6">__construct</link> (
+DomDocument $DomDocument)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classXmlConfigDao_1aba1af5f9e16639074ca13fd9c1afcb83">GetElementsByPath</link> (
+ $expression)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classXmlConfigDao_1a0c52d32ed6b39c921899ccd7998f97b9">SetElementByPath</link> (
+ $expression,  $data,  $fileName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classXmlConfigDao_1af39ad5ee18454986ef1e08c9000fddf6">
+                <title>XmlConfigDao::__construct (DomDocument $DomDocument)</title> <emphasis></emphasis>
+                
+<para>function __construct</para>
+
+<para>This method is executed when an object is instantiated from this class. Preprocessing can be done here before the object is put into service.</para>
+
+<para>private </para>
+
+            </section>
+            <section xml:id="classXmlConfigDao_1aba1af5f9e16639074ca13fd9c1afcb83">
+                <title>XmlConfigDao::GetElementsByPath ($expression)</title> <emphasis></emphasis>
+                
+<para>function GetElementsByPath</para>
+
+<para>This method queries an XML document for a specific node(s) matching some criteria and returns a collection of elements and their associated values.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>expression</entry>
+                                <entry>
+<para>XPath expression </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>array XML element value list </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classXmlConfigDao_1a0c52d32ed6b39c921899ccd7998f97b9">
+                <title>XmlConfigDao::SetElementByPath ($expression, $data, $fileName)</title> <emphasis></emphasis>
+                
+<para>function SetElementByPath</para>
+
+<para>This method queries an XML document for a specific node(s) matching some criteria and replaces the original text content with new text content.</para>
+
+<para>public 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>expression</entry>
+                                <entry>
+<para>XPath expression </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>data</entry>
+                                <entry>
+<para>Data to write </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>fileName</entry>
+                                <entry>
+<para>XML file to save </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

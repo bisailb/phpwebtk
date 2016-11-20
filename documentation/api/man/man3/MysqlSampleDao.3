@@ -1,0 +1,103 @@
+.TH "MysqlSampleDao" 3 "Sat Nov 12 2016" "PHP Web Toolkit 1.0.4 Alpha (phpwebtk)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MysqlSampleDao \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBSampleDao\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP ($dsn)"
+.br
+.ti -1c
+.RI "\fBInsertSample\fP ()"
+.br
+.ti -1c
+.RI "\fBDeleteSample\fP ()"
+.br
+.ti -1c
+.RI "\fBFindSample\fP ()"
+.br
+.ti -1c
+.RI "\fBUpdateSample\fP ()"
+.br
+.ti -1c
+.RI "\fBSelectSampleRS\fP ()"
+.br
+.ti -1c
+.RI "\fBSelectSampleTO\fP ()"
+.br
+.ti -1c
+.RI "\fBGetData\fP ($RecordSet)"
+.br
+.ti -1c
+.RI "\fBGetDataTO\fP ($RecordSet)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MysqlSampleDao::__construct ( $dsn)"
+function __construct
+.PP
+This method is executed when an object is instantiated from this class\&. Preprocessing can be done here before the object is put into service\&.
+.PP
+public 
+.SH "Member Function Documentation"
+.PP 
+.SS "MysqlSampleDao::DeleteSample ()"
+function DeleteSample
+.PP
+This method retrieves a database connection object, starts a transaction, executes SQL delete statements and catches any exceptions thrown\&.
+.PP
+public 
+.SS "MysqlSampleDao::FindSample ()"
+function FindSample
+.PP
+This method retrieves a database connection object, executes SQL select statements, parses recordsets and catches any exceptions thrown\&.
+.PP
+public 
+.SS "MysqlSampleDao::GetData ( $RecordSet)"
+function GetData
+.PP
+This method uses PEAR style data retrieval to retrieve arrays containing the current row\&. FetchRow() internally moves to the next record after returning the current row\&.
+.PP
+public 
+.SS "MysqlSampleDao::GetDataTO ( $RecordSet)"
+function GetDataTO
+.PP
+This method uses PEAR style data retrieval to retrieve the current row as an object\&. FetchNextObject() internally moves to the next row automatically\&.
+.PP
+public 
+.SS "MysqlSampleDao::InsertSample ()"
+function InsertSample
+.PP
+This method retrieves a database connection object, starts a transaction, executes SQL insert statements and catches any exceptions thrown\&.
+.PP
+public 
+.SS "MysqlSampleDao::SelectSampleRS ()"
+function SelectSampleRS
+.PP
+This method retrieves a database connection object, executes SQL select statements, parses recordsets and catches any exceptions thrown\&.
+.PP
+public 
+.SS "MysqlSampleDao::SelectSampleTO ()"
+function SelectSampleTO
+.PP
+This method retrieves a database connection object, executes SQL select statements, parses recordsets and catches any exceptions thrown\&.
+.PP
+public 
+.SS "MysqlSampleDao::UpdateSample ()"
+function UpdateSample
+.PP
+This method retrieves a database connection object, starts a transaction, executes SQL update statements and catches any exceptions thrown\&.
+.PP
+public 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PHP Web Toolkit 1\&.0\&.4 Alpha (phpwebtk) from the source code\&.
